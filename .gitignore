@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# 로컬 실행 결과
+/dist/
+/preview/
+/_out/
+/_solutions/
+
+# 설계 단계에서 쓴 임시 파일
+codetree_probe.py
+codetree_dump/
+claude_code_prompt.md

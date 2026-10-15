@@ -1,0 +1,26 @@
+# 풀이 레포(코드트리 GitHub 연동 레포)의 .github/workflows/ 에 복사하는 파일입니다.
+# 풀이 레포에 커밋이 생길 때마다 배지 레포에 갱신 신호를 보냅니다.
+#
+# 준비
+#   1. 배지 레포에 Contents: Read and write 권한이 있는 fine-grained 토큰을 만듭니다.
+#   2. 풀이 레포 Settings → Secrets and variables → Actions 에 CODETREE_BADGE_TOKEN 으로 등록합니다.
+#   3. 아래 repository 의 "내아이디" 를 바꿉니다. 기본 브랜치가 master 라면 branches 도 바꿉니다.
+#
+# 풀이 레포에 이미 다른 워크플로가 있다면 그 파일 아래에 이어 붙이지 말고 새 파일로 추가합니다.
+
+name: codetree-badge-dispatch
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  codetree-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: peter-evans/repository-dispatch@v4
+        with:
+          token: ${{ secrets.CODETREE_BADGE_TOKEN }}
+          repository: 내아이디/CodeTree_badge_generator
+          event-type: codetree-passed
+          client-payload: '{"codetree_repo": "${{ github.repository }}"}'

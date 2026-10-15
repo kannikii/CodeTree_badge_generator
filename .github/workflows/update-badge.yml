@@ -1,0 +1,121 @@
+name: Update CodeTree badge
+
+on:
+  # 풀이 레포에 코드트리 통과 커밋이 올라오면 (docs/solution-repo-dispatch.yml)
+  repository_dispatch:
+    types: [codetree-passed]
+  # 매일 00:07 KST — 날짜가 바뀌면 스트릭을 다시 계산한다 (KST 가 아니면 시각을 바꾼다)
+  schedule:
+    - cron: "7 15 * * *"
+  # Actions 탭의 Run workflow 버튼
+  workflow_dispatch:
+    inputs:
+      codetree_repo:
+        description: "풀이 레포 (owner/repo). 비워 두면 CODETREE_REPO 변수를 쓴다"
+        required: false
+        default: ""
+  # 생성기 코드가 바뀌면 다시 그린다
+  push:
+    branches: [main]
+    paths:
+      - "codetree_badge/**"
+      - ".github/workflows/update-badge.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: codetree-badge
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      BADGE_TIMEZONE: ${{ vars.BADGE_TIMEZONE || 'Asia/Seoul' }}
+      BADGE_TRAIL: ${{ vars.BADGE_TRAIL || 'auto' }}
+    steps:
+      - name: 배지 레포 체크아웃
+        uses: actions/checkout@v7
+
+      - name: 이전 결과 가져오기 (output 브랜치)
+        run: |
+          mkdir -p _out
+          if git fetch --depth=1 origin +refs/heads/output:refs/remotes/origin/output 2>/dev/null; then
+            git archive refs/remotes/origin/output | tar -x -C _out
+            echo "이전 결과를 불러왔다"
+          else
+            echo "output 브랜치가 아직 없다 (첫 실행)"
+          fi
+
+      - name: 풀이 레포 확인
+        id: repo
+        env:
+          FROM_INPUT: ${{ inputs.codetree_repo }}
+          FROM_PAYLOAD: ${{ github.event.client_payload.codetree_repo }}
+          FROM_VARS: ${{ vars.CODETREE_REPO }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          repo="${FROM_INPUT:-${FROM_PAYLOAD:-$FROM_VARS}}"
+          if [ -z "$repo" ] && [ -f _out/codetree.json ]; then
+            repo="$(jq -r '.source.repo // empty' _out/codetree.json)"
+          fi
+          if [ -n "$repo" ] && ! [[ "$repo" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]]; then
+            echo "::error title=잘못된 풀이 레포::'$repo' 는 owner/repo 형식이 아니다"
+            exit 1
+          fi
+          echo "repo=$repo" >> "$GITHUB_OUTPUT"
+          if [ -z "$repo" ]; then
+            msg="풀이 레포가 설정되지 않았다. Settings → Secrets and variables → Actions → Variables 에 CODETREE_REPO(예: 내아이디/PS)를 추가한다."
+            printf '### 설정이 필요하다\n\n%s\n' "$msg" >> "$GITHUB_STEP_SUMMARY"
+            if [ "$EVENT_NAME" = "push" ]; then
+              echo "::notice title=설정 필요::$msg"
+              exit 0
+            fi
+            echo "::error title=설정 필요::$msg"
+            exit 1
+          fi
+          echo "풀이 레포: $repo"
+
+      - name: 풀이 레포 체크아웃 (전체 이력)
+        if: steps.repo.outputs.repo != ''
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ steps.repo.outputs.repo }}
+          token: ${{ secrets.CODETREE_REPO_TOKEN || github.token }}
+          fetch-depth: 0
+          path: _solutions
+          persist-credentials: false
+
+      - name: 배지 생성
+        if: steps.repo.outputs.repo != ''
+        env:
+          SOURCE_REPO: ${{ steps.repo.outputs.repo }}
+        run: |
+          python3 -m codetree_badge \
+            --solutions _solutions \
+            --source-repo "$SOURCE_REPO" \
+            --out _out \
+            --tz "$BADGE_TIMEZONE" \
+            --trail "$BADGE_TRAIL" \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
+      - name: output 브랜치에 게시 (바뀐 경우만)
+        if: steps.repo.outputs.repo != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd _out
+          git init -q -b output
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "chore: update CodeTree badge"
+          new_tree="$(git rev-parse 'HEAD^{tree}')"
+          old_tree="$(git -C .. rev-parse -q --verify 'refs/remotes/origin/output^{tree}' || true)"
+          if [ "$new_tree" = "$old_tree" ]; then
+            echo "변경 없음 — 게시를 건너뛴다"
+            exit 0
+          fi
+          git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+          echo "output 브랜치에 게시했다"
