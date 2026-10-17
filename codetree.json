@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "date": "2026-10-17",
+ "timezone": "Asia/Seoul",
+ "source": {
+  "repo": "kannikii/PS",
+  "curriculum": "live"
+ },
+ "overall": {
+  "passed": 147,
+  "total": 1334,
+  "pct": 11.0
+ },
+ "display": {
+  "trail": 3,
+  "alias": "novice-high",
+  "level": "Novice High",
+  "name": "자료구조 알고리즘",
+  "mode": "auto",
+  "passed": 90,
+  "total": 242,
+  "pct": 37.2,
+  "is_current": false,
+  "lessons": "#o....########..........o#####O..######............."
+ },
+ "trails": [
+  {
+   "trail": 1,
+   "alias": "novice-low",
+   "level": "Novice Low",
+   "name": "프로그래밍 기초",
+   "passed": 12,
+   "total": 396,
+   "pct": 3.0,
+   "lessons": 87
+  },
+  {
+   "trail": 2,
+   "alias": "novice-mid",
+   "level": "Novice Mid",
+   "name": "프로그래밍 연습",
+   "passed": 45,
+   "total": 241,
+   "pct": 18.7,
+   "lessons": 29
+  },
+  {
+   "trail": 3,
+   "alias": "novice-high",
+   "level": "Novice High",
+   "name": "자료구조 알고리즘",
+   "passed": 90,
+   "total": 242,
+   "pct": 37.2,
+   "lessons": 52
+  },
+  {
+   "trail": 4,
+   "alias": "intermediate-low",
+   "level": "Intermediate Low",
+   "name": "알고리즘 입문",
+   "passed": 0,
+   "total": 130,
+   "pct": 0.0,
+   "lessons": 19
+  },
+  {
+   "trail": 5,
+   "alias": "intermediate-mid",
+   "level": "Intermediate Mid",
+   "name": "알고리즘 기본",
+   "passed": 0,
+   "total": 176,
+   "pct": 0.0,
+   "lessons": 18
+  },
+  {
+   "trail": 6,
+   "alias": "intermediate-high",
+   "level": "Intermediate High",
+   "name": "알고리즘 실전",
+   "passed": 0,
+   "total": 149,
+   "pct": 0.0,
+   "lessons": 17
+  }
+ ],
+ "streak": {
+  "current": 3,
+  "best": 15,
+  "total": 33,
+  "first": "2026-07-19",
+  "last": "2026-10-17",
+  "recent_28": "0111111111111111011111110111"
+ },
+ "recent": {
+  "title": "다양하게 출력",
+  "alias": "test-print-in-variety",
+  "trail": 1,
+  "lesson": "기본 출력",
+  "date": "2026-10-17"
+ },
+ "warnings": []
+}
