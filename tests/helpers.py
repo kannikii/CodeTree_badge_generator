@@ -9,12 +9,13 @@ from pathlib import Path
 from codetree_badge.curriculum import Card, Curriculum, Lesson, Trail
 
 
-def readme(alias: str, title: str, tag: str = "챌린지", path: str = "Trail 2 / 시뮬레이션 II / dx dy technique") -> str:
+def readme(alias: str, title: str, tag: str = "챌린지", path: str = "Trail 2 / 시뮬레이션 II / dx dy technique",
+           xp: int = 10) -> str:
     trail_alias = {"0": "codetree-101", "1": "novice-low", "2": "novice-mid", "3": "novice-high"}.get(path.split()[1], "x")
     return (f"# [[{tag}]{title}](https://www.codetree.ai/trails/complete/curated-cards/{alias})\n\n"
             "| 항목 | 내용 |\n|---|---|\n| 분류 | Trail |\n"
             f"| 커리큘럼 | [{path}](https://www.codetree.ai/trail-info/{trail_alias}/) |\n"
-            "| 난이도 | 쉬움 |\n| 경험치 | 10 XP |\n")
+            f"| 난이도 | 쉬움 |\n| 경험치 | {xp} XP |\n")
 
 
 def make_repo(root: Path, commits: list[dict]) -> Path:

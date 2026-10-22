@@ -23,6 +23,7 @@ from zoneinfo import ZoneInfo
 CARD_LINK = re.compile(r"codetree\.ai/\S*?curated-cards/([A-Za-z0-9][A-Za-z0-9_\-]*)")
 HEADER = re.compile(r"^\s*#\s*\[\[([^\]]*)\](.*)\]\((https?://[^)\s]+)\)\s*$")
 CURRICULUM_ROW = re.compile(r"커리큘럼\s*\|\s*\[([^\]]+)\]")
+XP_ROW = re.compile(r"경험치\s*\|\s*(\d+)\s*XP")
 PASSED_SUBJECT = re.compile(r"^\s*\[Passed\]\s*(.*?)(?:\s*\([^()]*\))?\s*$")
 TRAIL_LABEL = re.compile(r"^\s*Trail\s+(\d+)")
 
@@ -34,6 +35,7 @@ class CardRecord:
     title: str
     tag: str = ""          # 개념 / 챌린지 / 테스트 ...
     path_label: str = ""   # "Trail 3 / 배열, 연결 리스트 / 단일 연결 리스트"
+    xp: int = 0            # README 의 "경험치 | N XP"
 
     @property
     def lesson_label(self) -> str:
@@ -52,6 +54,7 @@ class PassEvent:
     sha: str
     title: str
     alias: str | None
+    xp: int = 0            # 이 커밋으로 통과한 카드의 경험치
 
 
 @dataclass
@@ -68,6 +71,20 @@ class SolutionData:
         zone = ZoneInfo(tz)
         return {e.when.astimezone(zone).date() for e in self.events}
 
+    @property
+    def total_xp(self) -> int:
+        """통과한 모든 카드의 경험치 합(커리큘럼 포함 여부와 무관)."""
+        return sum(c.xp for c in self.cards.values())
+
+    def xp_by_day(self, tz: str) -> dict[date, int]:
+        """날짜(설정 타임존) → 그날 처음 통과한 카드들의 경험치 합. 같은 카드를 다시 통과해도 한 번만 센다."""
+        zone = ZoneInfo(tz)
+        out: dict[date, int] = {}
+        for alias, when in self.first_passed.items():
+            day = when.astimezone(zone).date()
+            out[day] = out.get(day, 0) + self.cards[alias].xp
+        return out
+
 
 def parse_readme(text: str) -> CardRecord | None:
     """코드트리 카드 README 면 CardRecord, 아니면 None."""
@@ -82,7 +99,9 @@ def parse_readme(text: str) -> CardRecord | None:
     if m:
         tag, title = m.group(1).strip(), m.group(2).strip() or alias
     m_cur = CURRICULUM_ROW.search(text)
-    return CardRecord(alias=alias, title=title, tag=tag, path_label=m_cur.group(1).strip() if m_cur else "")
+    m_xp = XP_ROW.search(text)
+    return CardRecord(alias=alias, title=title, tag=tag, path_label=m_cur.group(1).strip() if m_cur else "",
+                      xp=int(m_xp.group(1)) if m_xp else 0)
 
 
 def title_from_subject(subject: str) -> str:
@@ -188,6 +207,7 @@ def scan(repo: Path) -> SolutionData:
         primary = recs[0][1] if recs else None
         data.events.append(PassEvent(when=when, sha=sha,
                                      title=primary.title if primary else title_from_subject(subject),
-                                     alias=primary.alias if primary else None))
+                                     alias=primary.alias if primary else None,
+                                     xp=primary.xp if primary else 0))
     data.events.sort(key=lambda e: e.when, reverse=True)
     return data

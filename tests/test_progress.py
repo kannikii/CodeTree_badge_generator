@@ -2,7 +2,7 @@ import unittest
 from datetime import date, datetime, timedelta, timezone
 
 from codetree_badge.curriculum import Card, normalize
-from codetree_badge.progress import compute, compute_streak, lesson_state, pick_display, to_json, trail_view
+from codetree_badge.progress import compute, compute_streak, compute_xp, lesson_state, pick_display, to_json, trail_view
 from codetree_badge.solutions import CardRecord, PassEvent, SolutionData
 
 from .helpers import small_curriculum
@@ -179,6 +179,68 @@ class StreakTest(unittest.TestCase):
     def test_empty(self):
         st = compute_streak(set(), date(2026, 10, 15))
         self.assertEqual((st.current, st.best, st.total, st.first), (0, 0, 0, None))
+
+
+class XPTest(unittest.TestCase):
+    TODAY = date(2026, 10, 30)
+
+    @staticmethod
+    def solution_with_xp(entries):
+        """entries: (alias, 경험치, 처음 통과 시각)"""
+        sol = SolutionData()
+        for alias, xp, when in entries:
+            sol.cards[alias] = CardRecord(alias=alias, title=alias, path_label="Trail 2 / 챕터 / 레슨", xp=xp)
+            sol.first_passed[alias] = when
+            sol.events.append(PassEvent(when=when, sha="0" * 40, title=alias, alias=alias, xp=xp))
+        sol.events.sort(key=lambda e: e.when, reverse=True)
+        return sol
+
+    def setUp(self):
+        k = lambda *a: datetime(*a, tzinfo=KST)
+        self.sol = self.solution_with_xp([
+            ("a", 30, k(2026, 10, 30, 7)),      # UTC 로는 10-29 22:00
+            ("b", 40, k(2026, 10, 30, 10)),
+            ("c", 50, k(2026, 10, 29, 20)),
+            ("d", 20, k(2026, 10, 17, 9)),      # 14일 창의 첫날
+            ("e", 100, k(2026, 10, 16, 9)),     # 창 밖: 누적에만 들어간다
+        ])
+
+    def test_series_and_totals(self):
+        x = compute_xp(self.sol, self.TODAY, "Asia/Seoul")
+        self.assertEqual(len(x.days), 14)
+        self.assertEqual((x.days[0].day, x.days[-1].day), (date(2026, 10, 17), self.TODAY))
+        self.assertEqual([d.xp for d in x.days], [20] + [0] * 11 + [50, 70])
+        self.assertEqual((x.goal, x.today, x.total, x.goal_days, x.best), (50, 70, 240, 2, 70))
+        self.assertEqual((x.level.level, x.level.xp, x.level.need), (4, 30, 110))
+        self.assertEqual(x.today_pct, 100.0)
+
+    def test_goal_changes_goal_days(self):
+        x = compute_xp(self.sol, self.TODAY, "Asia/Seoul", goal=90)
+        self.assertEqual((x.goal, x.goal_days), (90, 0))
+        self.assertAlmostEqual(x.today_pct, 70 / 90 * 100)
+
+    def test_timezone_moves_day_boundary(self):
+        kst = compute_xp(self.sol, self.TODAY, "Asia/Seoul")
+        utc = compute_xp(self.sol, self.TODAY, "UTC")
+        self.assertEqual((kst.today, kst.days[-2].xp), (70, 50))
+        self.assertEqual((utc.today, utc.days[-2].xp), (40, 80))
+        self.assertEqual(utc.total, kst.total)
+
+    def test_compute_and_json_carry_xp_and_level(self):
+        rep = compute(small_curriculum(), self.sol, self.TODAY, "Asia/Seoul", daily_goal=140)
+        self.assertEqual(rep.xp.goal, 140)
+        data = to_json(rep)
+        self.assertEqual((data["xp"]["goal"], data["xp"]["today"], data["xp"]["total"], data["xp"]["best"]),
+                         (140, 70, 240, 70))
+        self.assertEqual(len(data["xp"]["days"]), 14)
+        self.assertEqual(data["xp"]["days"][-1], {"date": "2026-10-30", "xp": 70})
+        self.assertEqual(data["level"], {"level": 4, "xp": 30, "need": 110, "pct": 27.3, "total": 240,
+                                         "stage": 2, "stage_name": "새싹", "next_stage_level": 6})
+
+    def test_empty_solution(self):
+        x = compute_xp(SolutionData(), self.TODAY, "Asia/Seoul")
+        self.assertEqual((x.today, x.total, x.goal_days, x.best, x.level.level), (0, 0, 0, 0, 1))
+        self.assertEqual(x.today_pct, 0.0)
 
 
 if __name__ == "__main__":

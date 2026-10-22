@@ -7,11 +7,14 @@ from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from .curriculum import Card, Curriculum, Trail
+from .levels import LevelInfo, level_for
 from .solutions import SolutionData
 
 # 레슨 상태 기호
 DONE, TEST_DONE, STARTED, TODO, CURRENT = "#", "o", "O", ".", "B"
 STRIP_DAYS = 28
+XP_DAYS = 14          # 일일 경험치 카드에 그리는 날수
+DEFAULT_GOAL = 50     # 코드트리 일일 목표 "보통"
 
 
 @dataclass
@@ -53,6 +56,27 @@ class Streak:
 
 
 @dataclass
+class DailyXP:
+    day: date
+    xp: int
+
+
+@dataclass
+class XPStats:
+    goal: int                 # 일일 목표 경험치
+    days: list[DailyXP]       # 최근 XP_DAYS 일, 왼쪽=과거 … 오른쪽=오늘
+    today: int                # 오늘 쌓은 경험치
+    total: int                # 누적 경험치
+    goal_days: int            # 최근 XP_DAYS 일 중 목표를 채운 날수
+    best: int                 # 최근 XP_DAYS 일 중 최고 경험치
+    level: LevelInfo
+
+    @property
+    def today_pct(self) -> float:
+        return min(100.0, self.today / self.goal * 100) if self.goal else 0.0
+
+
+@dataclass
 class Recent:
     title: str
     alias: str | None
@@ -74,6 +98,7 @@ class Report:
     is_current: bool          # 표시 트레일 == 최근 학습 트레일
     today: date
     tz: str
+    xp: XPStats
     unknown_aliases: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
 
@@ -137,7 +162,16 @@ def compute_streak(dates: set[date], today: date, days: int = STRIP_DAYS) -> Str
                   first=past[0] if past else None, last=past[-1] if past else None, strip=strip)
 
 
-def compute(cur: Curriculum, sol: SolutionData, today: date, tz: str, trail_choice: str = "auto") -> Report:
+def compute_xp(sol: SolutionData, today: date, tz: str, goal: int = DEFAULT_GOAL, days: int = XP_DAYS) -> XPStats:
+    by_day = sol.xp_by_day(tz)
+    series = [DailyXP(day=d, xp=by_day.get(d, 0)) for d in (today - timedelta(days=k) for k in range(days - 1, -1, -1))]
+    return XPStats(goal=goal, days=series, today=by_day.get(today, 0), total=sol.total_xp,
+                   goal_days=sum(1 for d in series if goal and d.xp >= goal), best=max(d.xp for d in series),
+                   level=level_for(sol.total_xp))
+
+
+def compute(cur: Curriculum, sol: SolutionData, today: date, tz: str, trail_choice: str = "auto",
+            daily_goal: int = DEFAULT_GOAL) -> Report:
     index = cur.card_index()
     passed = {a for a in sol.cards if a in index}
     unknown = sorted(a for a in sol.cards if a not in index)
@@ -172,7 +206,8 @@ def compute(cur: Curriculum, sol: SolutionData, today: date, tz: str, trail_choi
                   passed=sum(v.passed for v in views), total=sum(v.total for v in views),
                   streak=compute_streak(sol.study_dates(tz), today), recent=recent,
                   is_current=bool(recent and recent.trail_no == display.no),
-                  today=today, tz=tz, unknown_aliases=unknown, warnings=warnings)
+                  today=today, tz=tz, xp=compute_xp(sol, today, tz, daily_goal),
+                  unknown_aliases=unknown, warnings=warnings)
 
 
 def to_json(report: Report, source_repo: str = "", curriculum_source: str = "") -> dict:
@@ -180,8 +215,10 @@ def to_json(report: Report, source_repo: str = "", curriculum_source: str = "") 
     d = report.display
     s = report.streak
     r = report.recent
+    x = report.xp
+    lv = x.level
     return {
-        "schema": 1,
+        "schema": 2,
         "date": report.today.isoformat(),
         "timezone": report.tz,
         "source": {"repo": source_repo, "curriculum": curriculum_source},
@@ -198,5 +235,9 @@ def to_json(report: Report, source_repo: str = "", curriculum_source: str = "") 
                    "recent_28": "".join("1" if x else "0" for x in s.strip)},
         "recent": None if r is None else {"title": r.title, "alias": r.alias, "trail": r.trail_no,
                                           "lesson": r.lesson, "date": r.day.isoformat()},
+        "xp": {"goal": x.goal, "today": x.today, "total": x.total, "goal_days": x.goal_days, "best": x.best,
+               "days": [{"date": dx.day.isoformat(), "xp": dx.xp} for dx in x.days]},
+        "level": {"level": lv.level, "xp": lv.xp, "need": lv.need, "pct": round(lv.pct, 1), "total": lv.total,
+                  "stage": lv.stage, "stage_name": lv.stage_name, "next_stage_level": lv.next_stage_level},
         "warnings": report.warnings,
     }

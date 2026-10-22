@@ -30,6 +30,12 @@ class ParseReadmeTest(unittest.TestCase):
         self.assertIsNone(parse_readme("# [Silver III] 문제 - 1000\n\n[문제 링크](https://www.acmicpc.net/problem/1000)\n"))
         self.assertIsNone(parse_readme(""))
 
+    def test_xp_row(self):
+        self.assertEqual(parse_readme(readme("a", "A")).xp, 10)
+        self.assertEqual(parse_readme(readme("a", "A", xp=35)).xp, 35)
+        no_xp = "\n".join(ln for ln in readme("a", "A").splitlines() if "경험치" not in ln)
+        self.assertEqual(parse_readme(no_xp).xp, 0)
+
     def test_title_from_subject(self):
         self.assertEqual(title_from_subject("[Passed] 되돌아오기 (2ms, 0MB)"), "되돌아오기")
         self.assertEqual(title_from_subject("[Passed] 출력결과 65"), "출력결과 65")
@@ -87,6 +93,12 @@ class ScanTest(unittest.TestCase):
 
     def test_first_passed_keeps_earliest(self):
         self.assertEqual(self.data.first_passed["a"].isoformat(), "2026-10-01T10:00:00+09:00")
+
+    def test_xp_counts_each_card_once(self):
+        self.assertEqual({a: c.xp for a, c in self.data.cards.items()}, {a: 10 for a in ("a", "b", "s1", "s2", "c")})
+        self.assertEqual(self.data.total_xp, 50)                      # 재통과(10-03)는 다시 세지 않는다
+        self.assertEqual(self.data.xp_by_day("Asia/Seoul"), {date(2026, 10, d): 10 for d in (1, 2, 5, 6, 10)})
+        self.assertEqual(self.data.xp_by_day("UTC")[date(2026, 10, 9)], 10)
 
     def test_study_dates_follow_timezone(self):
         kst = self.data.study_dates("Asia/Seoul")

@@ -19,6 +19,7 @@ _TRAILS = [  # (alias, 이름, 레슨 수) — 레슨 수는 코드트리 트레
     ("intermediate-high", "알고리즘 실전", 17),
 ]
 _CARD_TYPES = ["Introduction", "Problem", "Problem", "Problem", "Test"]
+_CARD_XP = {"Introduction": 10, "Problem": 20, "Test": 30}   # 카드 종류별 경험치(샘플)
 
 # 트레일별 레슨 상태 (# 완료 · o 테스트만 통과 · O 일부 통과 · B 일부 통과 + 가장 최근 학습 · . 없음)
 _PATTERNS = {
@@ -63,10 +64,11 @@ def build(today: date = SAMPLE_TODAY, tz: str = "Asia/Seoul") -> tuple[Curriculu
         day = today if is_latest else days[min(len(days) - 1, n * len(days) // max(1, len(ordered)))]
         when = datetime.combine(day, time(23 if is_latest else 20, 0), tzinfo=zone) + timedelta(seconds=n)
         title = f"샘플 문제 {lesson.name[-2:].strip()}-{card.alias.rsplit('-', 1)[1]}"
+        xp = _CARD_XP[card.type]
         sol.cards[card.alias] = CardRecord(alias=card.alias, title=title, tag="챌린지",
-                                           path_label=f"Trail {trail.order} / {lesson.chapter} / {lesson.name}")
+                                           path_label=f"Trail {trail.order} / {lesson.chapter} / {lesson.name}", xp=xp)
         sol.first_passed[card.alias] = when
-        sol.events.append(PassEvent(when=when, sha=f"{n:040x}", title=title, alias=card.alias))
+        sol.events.append(PassEvent(when=when, sha=f"{n:040x}", title=title, alias=card.alias, xp=xp))
     # 학습일이 카드 수보다 많으면 남는 날에도 이벤트를 하나씩 둔다(스트릭 모양 유지)
     used = {e.when.date() for e in sol.events}
     for day in days:

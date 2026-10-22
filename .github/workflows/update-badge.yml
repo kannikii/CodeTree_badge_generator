@@ -34,6 +34,7 @@ jobs:
     env:
       BADGE_TIMEZONE: ${{ vars.BADGE_TIMEZONE || 'Asia/Seoul' }}
       BADGE_TRAIL: ${{ vars.BADGE_TRAIL || 'auto' }}
+      BADGE_DAILY_GOAL: ${{ vars.BADGE_DAILY_GOAL || '50' }}
     steps:
       - name: 배지 레포 체크아웃
         uses: actions/checkout@v7
@@ -98,6 +99,7 @@ jobs:
             --out _out \
             --tz "$BADGE_TIMEZONE" \
             --trail "$BADGE_TRAIL" \
+            --daily-goal "$BADGE_DAILY_GOAL" \
             --summary-file "$GITHUB_STEP_SUMMARY"
 
       - name: output 브랜치에 게시 (바뀐 경우만)

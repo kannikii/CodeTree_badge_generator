@@ -6,12 +6,24 @@
 
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-dark.svg">
-  <img alt="코드트리 학습 현황" src="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-light.svg">
-</picture>
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-dark.svg">
+    <img alt="코드트리 학습 현황" src="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-light.svg">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-level-dark.svg">
+    <img alt="성장 레벨" src="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-level-light.svg">
+  </picture>
+</p>
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-xp-dark.svg">
+    <img alt="일일 경험치" src="https://raw.githubusercontent.com/kannikii/CodeTree_badge_generator/output/codetree-xp-light.svg">
+  </picture>
+</p>
 
-<sub>제작자의 실제 배지입니다. 문제를 풀 때마다 자동으로 바뀝니다.</sub>
+<sub>제작자의 실제 배지입니다. 문제를 풀 때마다 자동으로 바뀝니다. 세 배지는 각각 따로 쓸 수 있습니다.</sub>
 
 <br><br>
 
@@ -24,6 +36,7 @@
 ## ✨ 특징
 
 - **자동 갱신** — 코드트리에서 문제를 통과하면 몇 분 안에 배지가 바뀝니다.
+- **경험치 · 성장 레벨 배지 (선택)** — 코드트리 일일 목표 대비 경험치 그래프와, 누적 경험치로 나무가 자라는 도트풍(8-bit) 레벨 배지를 따로 붙일 수 있습니다.
 - **계정 정보 불필요** — 코드트리 아이디·비밀번호를 입력하지 않습니다.
 - **다크 모드 대응** — 보는 사람의 GitHub 테마에 맞춰 색이 바뀝니다.
 - **서버 불필요** — GitHub Actions만으로 무료로 동작합니다.
@@ -46,6 +59,49 @@
 | <img src="docs/icons/started.svg" width="16"> | **시작됨** — 한 문제 이상 통과했습니다 |
 | <img src="docs/icons/todo.svg" width="16"> | **시작하지 않음** |
 | <img src="docs/icons/current.svg" width="16"> | **학습 중** — 가장 최근에 문제를 푼 레슨입니다 |
+
+<br>
+
+### 일일 경험치 카드 (선택)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/preview/sample-xp-dark.svg">
+  <img alt="일일 경험치 카드 샘플" src="docs/preview/sample-xp-light.svg" width="560">
+</picture>
+
+코드트리는 문제마다 다른 경험치(XP)를 주고, 하루 목표를 정할 수 있습니다. 이 카드는 그 목표를 하루하루 얼마나 채웠는지 보여줍니다.
+
+| 영역 | 보여주는 내용 |
+|:--|:--|
+| 막대 그래프 | 최근 14일 동안 하루에 얻은 경험치. 점선이 목표이고, 목표를 채운 날은 초록색입니다 |
+| 하단 | 오늘 쌓은 경험치와 목표 달성 여부, 최근 14일 중 목표를 채운 날수 |
+
+> 💡 목표는 코드트리에서 고른 일일 목표와 같게 `BADGE_DAILY_GOAL` 옵션으로 맞춰 주세요. 기본값은 50 XP(보통)입니다.
+
+<br>
+
+### 성장 레벨 카드 (선택)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/preview/sample-level-dark.svg">
+  <img alt="성장 레벨 카드 샘플" src="docs/preview/sample-level-light.svg" width="200">
+</picture>
+
+지금까지 쌓은 경험치를 모두 더해 레벨을 매기고, 레벨이 오르면 나무가 자랍니다. 키우기 게임처럼 9단계로 모양이 바뀝니다.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/preview/stages-dark.svg">
+  <img alt="성장 단계 9종" src="docs/preview/stages-light.svg">
+</picture>
+
+| 단계 | 씨앗 | 새싹 | 묘목 | 어린 나무 | 나무 | 큰 나무 | 꽃나무 | 열매 나무 | 거목 |
+|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 레벨 | 1 | 3 | 6 | 10 | 15 | 20 | 28 | 36 | 45 |
+| 누적 XP | 0 | 120 | 450 | 1,170 | 2,520 | 4,370 | 8,370 | 13,650 | 21,120 |
+
+- 다음 레벨까지 필요한 경험치는 `20 × 레벨 + 30` XP 입니다 (Lv.1 → 2 는 50 XP, Lv.10 → 11 은 230 XP).
+- 카드 오른쪽 위의 점 9개는 단계 진행도, 아래 막대는 현재 레벨 안에서의 진행도입니다.
+- 레벨과 단계는 이 프로젝트가 정한 규칙이며, 코드트리의 레벨·등급과는 관계가 없습니다.
 
 <br>
 
@@ -168,6 +224,35 @@ jobs:
 
 > 💡 배지를 조금 작게 하려면 `<img ... width="460">` 처럼 `width`를 넣으세요.
 
+**경험치 · 성장 레벨 배지도 붙이기 (선택)**
+
+`output` 브랜치에는 배지가 세 종류 만들어집니다. 필요한 것만 골라 붙이세요.
+
+| 파일 | 내용 | 크기 |
+|:--|:--|:--:|
+| `codetree-light.svg` / `codetree-dark.svg` | 학습 현황 (기본) | 560 × 272 |
+| `codetree-level-light.svg` / `codetree-level-dark.svg` | 성장 레벨 | 200 × 272 |
+| `codetree-xp-light.svg` / `codetree-xp-dark.svg` | 일일 경험치 | 560 × 224 |
+
+이 레포 상단처럼 **학습 현황 옆에 레벨, 아래에 경험치**를 두려면 위 스니펫 대신 아래를 붙여 넣습니다. **`내아이디`** 를 모두 바꾸면 됩니다.
+
+```html
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/내아이디/CodeTree_badge_generator/output/codetree-dark.svg">
+    <img alt="코드트리 학습 현황" src="https://raw.githubusercontent.com/내아이디/CodeTree_badge_generator/output/codetree-light.svg">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/내아이디/CodeTree_badge_generator/output/codetree-level-dark.svg">
+    <img alt="성장 레벨" src="https://raw.githubusercontent.com/내아이디/CodeTree_badge_generator/output/codetree-level-light.svg">
+  </picture>
+</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/내아이디/CodeTree_badge_generator/output/codetree-xp-dark.svg">
+  <img alt="일일 경험치" src="https://raw.githubusercontent.com/내아이디/CodeTree_badge_generator/output/codetree-xp-light.svg">
+</picture>
+```
+
 <br>
 
 **🎉 끝! 이제 문제를 풀 때마다 프로필 배지가 자동으로 바뀝니다.**
@@ -182,6 +267,7 @@ jobs:
 |:--|:--:|:--|:--:|
 | `BADGE_TRAIL` | Variable | 보여줄 트레일 고정 (`1`~`6`) | 가장 많이 푼 트레일 |
 | `BADGE_TIMEZONE` | Variable | 하루를 나누는 기준 시간대 | `Asia/Seoul` |
+| `BADGE_DAILY_GOAL` | Variable | 일일 경험치 카드의 목표 XP. 코드트리 일일 목표와 같게 (`25` · `50` · `90` · `140` · `240`) | `50` |
 | `CODETREE_REPO_TOKEN` | Secret | 풀이 레포가 **private**일 때 읽기용 토큰 | - |
 
 <br>
@@ -227,6 +313,15 @@ GitHub 연동을 켜기 전에 푼 문제는 풀이 레포에 기록이 없어�
 </details>
 
 <details>
+<summary><b>경험치와 레벨은 어디서 가져오나요?</b></summary>
+
+경험치는 풀이 레포의 문제별 `README.md`에 코드트리가 적어 두는 `경험치 | N XP` 값을 더한 것입니다.
+GitHub 연동 전에 푼 문제는 포함되지 않아 코드트리 화면의 누적 경험치보다 적을 수 있습니다.
+성장 레벨은 이 누적 경험치로 이 프로젝트가 따로 계산하는 값이라, 코드트리의 레벨이나 등급과는 관계가 없습니다.
+
+</details>
+
+<details>
 <summary><b>원본 레포가 업데이트되면 어떻게 받나요?</b></summary>
 
 Fork한 레포에서 `Sync fork` → `Update branch`를 누르면 됩니다. 배지 파일은 별도 브랜치(`output`)에 있어서 충돌이 나지 않습니다.
@@ -258,7 +353,8 @@ flowchart LR
 - **통과 기록**: 풀이 레포의 커밋 이력에서 읽습니다. 커밋마다 남는 `README.md`의 카드 링크로 어떤 문제인지 구분합니다.
 - **커리큘럼 구조**: 코드트리가 로그인 없이 공개하는 커리큘럼 정보에서 트레일·레슨 구성을 가져옵니다.
 - **갱신 시점**: 풀이 레포에 커밋이 생길 때, 매일 00:07(KST), `Run workflow`를 눌렀을 때.
-- **결과물**: `output` 브랜치에 `codetree-light.svg`, `codetree-dark.svg`로 저장됩니다.
+- **경험치**: 풀이 레포 README의 `경험치 | N XP` 행을 읽습니다. 같은 문제를 다시 통과해도 한 번만 셉니다.
+- **결과물**: `output` 브랜치에 `codetree-{light,dark}.svg`(학습 현황), `codetree-xp-{light,dark}.svg`(일일 경험치), `codetree-level-{light,dark}.svg`(성장 레벨), `codetree.json`(숫자 데이터)으로 저장됩니다.
 
 </details>
 
@@ -275,6 +371,9 @@ python3 -m codetree_badge --sample --out preview
 git clone https://github.com/내아이디/풀이레포.git ps
 python3 -m codetree_badge --solutions ps --out dist
 
+# 일일 목표를 90 XP 로 두고 만들기
+python3 -m codetree_badge --solutions ps --out dist --daily-goal 90
+
 # 테스트
 python3 -m unittest discover -s tests -t .
 ```
@@ -286,3 +385,5 @@ python3 -m unittest discover -s tests -t .
 ## 📄 라이선스
 
 [MIT](LICENSE) · 코드트리(Codetree)와 관련 없는 비공식 프로젝트입니다. 코드트리 계정 정보는 사용하지 않으며, 공개된 커리큘럼 정보와 본인의 풀이 레포만 읽습니다.
+
+경험치 · 성장 레벨 배지의 도트 글꼴은 [Galmuri](https://github.com/quiple/galmuri) (SIL Open Font License 1.1 · [사본](docs/fonts/OFL-Galmuri.txt)) 를 글리프 단위로 내장했습니다.
