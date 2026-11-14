@@ -1,0 +1,6938 @@
+{
+ "schema": 1,
+ "source": "https://api-prod.codetree.ai/api/v2/trails/progress/",
+ "trails": [
+  {
+   "alias": "novice-low",
+   "name": "프로그래밍 기초",
+   "order": 1,
+   "lessons": [
+    {
+     "alias": "simple-print",
+     "name": "기본 출력",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-print-word",
+       "Introduction"
+      ],
+      [
+       "intro-print-sentence",
+       "Introduction"
+      ],
+      [
+       "intro-print-quote",
+       "Introduction"
+      ],
+      [
+       "intro-print-two-lines",
+       "Introduction"
+      ],
+      [
+       "intro-print-one-number",
+       "Introduction"
+      ],
+      [
+       "intro-print-two-numbers",
+       "Introduction"
+      ],
+      [
+       "challenge-print-one-line",
+       "Problem"
+      ],
+      [
+       "challenge-print-two-sentences-introduce",
+       "Problem"
+      ],
+      [
+       "test-print-in-variety",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "variable-and-type",
+     "name": "변수와 자료형",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-define-numbers-and-substract",
+       "Introduction"
+      ],
+      [
+       "challenge-declaring-variables",
+       "Problem"
+      ],
+      [
+       "test-Declare-an-integer-and-print-the-multiplication",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-format",
+     "name": "출력 형식",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-declaration-of-three-natural-numbers",
+       "Introduction"
+      ],
+      [
+       "challenge-outputing-variables",
+       "Problem"
+      ],
+      [
+       "challenge-outputing-variables-2",
+       "Problem"
+      ],
+      [
+       "test-outputing-variables-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-rounded-decimals",
+     "name": "소수점 맞춰 출력",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-weight-on-the-moon",
+       "Introduction"
+      ],
+      [
+       "challenge-rounding-decimal-points",
+       "Problem"
+      ],
+      [
+       "challenge-change-length-unit",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201715",
+       "Problem"
+      ],
+      [
+       "test-the-product-of-two-real-numbers",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "assign-variable-value",
+     "name": "변수 값 변경",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-replacing-variable-values",
+       "Introduction"
+      ],
+      [
+       "challenge-replacing-variable-values-4",
+       "Problem"
+      ],
+      [
+       "test-change-charater",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "assign-from-other-variable",
+     "name": "다른 변수로부터 값 변경",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-replacing-variable-values-2",
+       "Introduction"
+      ],
+      [
+       "challenge-replacing-variable-values-5",
+       "Problem"
+      ],
+      [
+       "test-copy-integer",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "swap-two-variables",
+     "name": "두 변수 값을 교환",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-replacing-variable-values-3",
+       "Introduction"
+      ],
+      [
+       "challenge-replacing-variable-values-6",
+       "Problem"
+      ],
+      [
+       "test-exchange-data",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "chain-assignment",
+     "name": "변수값 동시에 복사",
+     "chapter": "출력",
+     "cards": [
+      [
+       "intro-copying-variable-values",
+       "Introduction"
+      ],
+      [
+       "challenge-copying-variable-values-2",
+       "Problem"
+      ],
+      [
+       "test-copy-the-sum",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "input-integer",
+     "name": "정수 입력",
+     "chapter": "입출력",
+     "cards": [
+      [
+       "intro-input-calculate",
+       "Introduction"
+      ],
+      [
+       "challenge-enter-int-and-print-score",
+       "Problem"
+      ],
+      [
+       "challenge-input-calculate-4",
+       "Problem"
+      ],
+      [
+       "test-calculation-by-inputting-an-integer",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "input-float",
+     "name": "실수 입력",
+     "chapter": "입출력",
+     "cards": [
+      [
+       "intro-enter-real-value-and-print",
+       "Introduction"
+      ],
+      [
+       "challenge-convert-length-units",
+       "Problem"
+      ],
+      [
+       "test-calculation-by-inputting-a-real-number-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "input-between-blank",
+     "name": "공백을 사이에 두고 입력",
+     "chapter": "입출력",
+     "cards": [
+      [
+       "intro-input-calculate-2",
+       "Introduction"
+      ],
+      [
+       "challenge-input-calculate-5",
+       "Problem"
+      ],
+      [
+       "challenge-changing-inputs",
+       "Problem"
+      ],
+      [
+       "test-output-of-value-and-sum",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "input-multiple-lines",
+     "name": "2개의 줄에 걸쳐 입력",
+     "chapter": "입출력",
+     "cards": [
+      [
+       "intro-input-calculate-3",
+       "Introduction"
+      ],
+      [
+       "challenge-input-and-output",
+       "Problem"
+      ],
+      [
+       "challenge-calculation-by-inputting-a-real-number",
+       "Problem"
+      ],
+      [
+       "challenge-rounding-of-three-actual-numbers",
+       "Problem"
+      ],
+      [
+       "test-take-three-integers-and-output",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "input-character-and-string",
+     "name": "문자, 문자열 입력",
+     "chapter": "입출력",
+     "cards": [
+      [
+       "intro-enter-char-and-print",
+       "Introduction"
+      ],
+      [
+       "intro-enter-word-and-print",
+       "Introduction"
+      ],
+      [
+       "challenge-print-number--and-letter",
+       "Problem"
+      ],
+      [
+       "test-change-order-of-strings",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "input-between-specific-character",
+     "name": "특정 문자를 사이에 두고 입력",
+     "chapter": "입출력",
+     "cards": [
+      [
+       "intro-print-one-hour-later",
+       "Introduction"
+      ],
+      [
+       "intro-print-date-with-different-format-2",
+       "Introduction"
+      ],
+      [
+       "challenge-input-and-output-2",
+       "Problem"
+      ],
+      [
+       "challenge-print-date-with-different-format",
+       "Problem"
+      ],
+      [
+       "test-change-phone-number",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "four-arithmetic-operations",
+     "name": "사칙연산",
+     "chapter": "연산자",
+     "cards": [
+      [
+       "intro-simple-arithmetic-operation",
+       "Introduction"
+      ],
+      [
+       "intro-square-width-after-length-change",
+       "Introduction"
+      ],
+      [
+       "challenge-multiple-and-quotient-of-two-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-quotient-remainder",
+       "Problem"
+      ],
+      [
+       "challenge-take-input-and-operate",
+       "Problem"
+      ],
+      [
+       "challenge-add-two-integers-each-other",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201622",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201626",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201815",
+       "Problem"
+      ],
+      [
+       "test-divide-of-sum-and-sub",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "sum-and-average",
+     "name": "합과 평균",
+     "chapter": "연산자",
+     "cards": [
+      [
+       "intro-sum-and-avg",
+       "Introduction"
+      ],
+      [
+       "challenge-sum-and-mean-of-three-numbers",
+       "Problem"
+      ],
+      [
+       "test-sub-of-average-and-sum",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "if-statement",
+     "name": "if 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-separate-negative-number",
+       "Introduction"
+      ],
+      [
+       "challenge-subtract-from-large-number",
+       "Problem"
+      ],
+      [
+       "challenge-bmi",
+       "Problem"
+      ],
+      [
+       "test-area-of-a-rectangle",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "if-else-statement",
+     "name": "if else 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-verify-test-passed",
+       "Introduction"
+      ],
+      [
+       "challenge-numbers-condition",
+       "Problem"
+      ],
+      [
+       "test-operation-based-on-comparison",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "ternary-operator",
+     "name": "삼항 연산자",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-max-of-two-nums",
+       "Introduction"
+      ],
+      [
+       "challenge-ternary-operator",
+       "Problem"
+      ],
+      [
+       "test-ternary-operator-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "if-elif-else-statement",
+     "name": "if elif else 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-state-of-water",
+       "Introduction"
+      ],
+      [
+       "challenge-eye-test-2",
+       "Problem"
+      ],
+      [
+       "test-things-able-to-buy",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "if-elif-elif-else-statement",
+     "name": "if elif elif else 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-calling-attendance",
+       "Introduction"
+      ],
+      [
+       "challenge-ranking",
+       "Problem"
+      ],
+      [
+       "challenge-evaluation-by-alphabet",
+       "Problem"
+      ],
+      [
+       "test-things-able-to-buy-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "if-if-statement",
+     "name": "if if 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-up-to-2-calculations",
+       "Introduction"
+      ],
+      [
+       "challenge-numbers-condition-2",
+       "Problem"
+      ],
+      [
+       "test-two-operations",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "if-else-if-else-statement",
+     "name": "if else if else 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-parity-of-two-numbers",
+       "Introduction"
+      ],
+      [
+       "challenge-specific-comparison-of-two-natural-numbers",
+       "Problem"
+      ],
+      [
+       "test-multiples-of-3-or-5",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "comparison-operators",
+     "name": "비교 연산자와 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-comparison-operator",
+       "Introduction"
+      ],
+      [
+       "challenge-four-relational-operators",
+       "Problem"
+      ],
+      [
+       "test-4-time-comparison",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "and-operator",
+     "name": "and 연산자",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-score-comparison",
+       "Introduction"
+      ],
+      [
+       "intro-number-in-range",
+       "Introduction"
+      ],
+      [
+       "challenge-eye-test",
+       "Problem"
+      ],
+      [
+       "challenge-specific-comparison-of-three-natural-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-of-three-numbers",
+       "Problem"
+      ],
+      [
+       "test-median-of-three-numbers",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "or-operator",
+     "name": "or 연산자",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-number-out-of-range",
+       "Introduction"
+      ],
+      [
+       "challenge-numbers-condition-3",
+       "Problem"
+      ],
+      [
+       "test-multiple-of-either",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "mixed-and-or",
+     "name": "and, or 혼합",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-amazing-number",
+       "Introduction"
+      ],
+      [
+       "intro-season-of-num",
+       "Introduction"
+      ],
+      [
+       "challenge-scholarship",
+       "Problem"
+      ],
+      [
+       "challenge-math-scores-are-more-difficult",
+       "Problem"
+      ],
+      [
+       "test-two-person",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "nested-conditional",
+     "name": "중첩 조건문",
+     "chapter": "조건문",
+     "cards": [
+      [
+       "intro-sex-and-age",
+       "Introduction"
+      ],
+      [
+       "intro-is-leap-year",
+       "Introduction"
+      ],
+      [
+       "challenge-reading-k201814",
+       "Problem"
+      ],
+      [
+       "challenge-number-of-days-in-month",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-value",
+       "Problem"
+      ],
+      [
+       "challenge-covid-manual",
+       "Problem"
+      ],
+      [
+       "test-find-the-median",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "for-loop-increase-by-one",
+     "name": "for문 a → b 1씩 증가",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-print-in-order",
+       "Introduction"
+      ],
+      [
+       "challenge-print-number-from-given-num-to-100",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201517",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201528",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201530",
+       "Problem"
+      ],
+      [
+       "test-print-from-1-to-n",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "for-loop-increase-by-two",
+     "name": "for문 a → b 2씩 증가",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-increase-and-print",
+       "Introduction"
+      ],
+      [
+       "challenge-print-multiple-of-input",
+       "Problem"
+      ],
+      [
+       "test-output-only-odd",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "for-loop-decrease-by-one",
+     "name": "for문 b → a 1씩 감소",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-decrease-and-print",
+       "Introduction"
+      ],
+      [
+       "challenge-reaching-specific-number-2",
+       "Problem"
+      ],
+      [
+       "challenge-dec-from-b-to-a",
+       "Problem"
+      ],
+      [
+       "test-output-only-odd-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "while-loop-increase-by-one",
+     "name": "while문 a → b 1씩 증가",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-increase-and-print-2",
+       "Introduction"
+      ],
+      [
+       "challenge-print-1-to-n",
+       "Problem"
+      ],
+      [
+       "test-print-n-stars",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "while-loop-increase-by-two",
+     "name": "while문 a → b 2씩 증가",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-increase-and-print-3",
+       "Introduction"
+      ],
+      [
+       "challenge-print-multiple-of-number-three",
+       "Problem"
+      ],
+      [
+       "test-output-only-even",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "while-loop-decrease-by-one",
+     "name": "while문 b → a 1씩 감소",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-decrease-and-print-2",
+       "Introduction"
+      ],
+      [
+       "challenge-print-n-to-1",
+       "Problem"
+      ],
+      [
+       "test-output-only-even-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "loop-n-times",
+     "name": "n번 반복하기",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-print-text",
+       "Introduction"
+      ],
+      [
+       "challenge-print-string",
+       "Problem"
+      ],
+      [
+       "challenge-a-divide-b",
+       "Problem"
+      ],
+      [
+       "test-add-n-times",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "for-inside-if",
+     "name": "if 안의 for",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-increasing-and-decreasing-numbers",
+       "Introduction"
+      ],
+      [
+       "challenge-from-high-to-low",
+       "Problem"
+      ],
+      [
+       "test-output-only-natural-number",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "if-inside-loop",
+     "name": "반복문 안의 if",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-multiple-of-2-or-3",
+       "Introduction"
+      ],
+      [
+       "intro-multiple-of-a",
+       "Introduction"
+      ],
+      [
+       "challenge-reach-100-point",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201724",
+       "Problem"
+      ],
+      [
+       "challenge-a-to-b",
+       "Problem"
+      ],
+      [
+       "challenge-369-game",
+       "Problem"
+      ],
+      [
+       "test-print-only-odd-numbers",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "use-cnt-variable",
+     "name": "cnt 활용하기",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-number-of-multipliers-2",
+       "Introduction"
+      ],
+      [
+       "challenge-number-of-multipliers",
+       "Problem"
+      ],
+      [
+       "challenge-cleaning-numbering",
+       "Problem"
+      ],
+      [
+       "challenge-number-of-leap-years",
+       "Problem"
+      ],
+      [
+       "test-check-number-of-appearances",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "compute-sum",
+     "name": "sum 계산하기",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-sum-from-a-to-b",
+       "Introduction"
+      ],
+      [
+       "challenge-sum-of-the-number-input-from-100",
+       "Problem"
+      ],
+      [
+       "challenge-add-only-odd-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-multiplication-between-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-specific-condition-multiple",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-even-nums-from-a-to-b",
+       "Problem"
+      ],
+      [
+       "challenge-number-in-range-2",
+       "Problem"
+      ],
+      [
+       "challenge-perfect-number-discriminator",
+       "Problem"
+      ],
+      [
+       "challenge-sum-and-average-of-the-inputs",
+       "Problem"
+      ],
+      [
+       "test-find-the-total",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "compute-product",
+     "name": "prod 계산하기",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-multiplication-up-to-a-given-number",
+       "Introduction"
+      ],
+      [
+       "challenge-a-to-the-power-of-b",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201714",
+       "Problem"
+      ],
+      [
+       "test-product-of-multiples-of-a",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "continue-keyword",
+     "name": "continue문",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-unfriendly-number",
+       "Introduction"
+      ],
+      [
+       "challenge-print-onjeonsu",
+       "Problem"
+      ],
+      [
+       "challenge-reading-88",
+       "Problem"
+      ],
+      [
+       "test-number-that-meets-the-condition",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "break-keyword",
+     "name": "break문",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-sum-from-the-one",
+       "Introduction"
+      ],
+      [
+       "challenge-multiple-from-one",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201816",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201826",
+       "Problem"
+      ],
+      [
+       "test-divide-by-1",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "infinite-loop",
+     "name": "Infinite Loop",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-print-until-zero-is-given",
+       "Introduction"
+      ],
+      [
+       "challenge-catching-specific-number",
+       "Problem"
+      ],
+      [
+       "challenge-calling-attendance-2",
+       "Problem"
+      ],
+      [
+       "challenge-print-share",
+       "Problem"
+      ],
+      [
+       "challenge-continue-calculating-width-of-the-rectangle",
+       "Problem"
+      ],
+      [
+       "test-average-age-of-20",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "loop-in-undecidable-situation",
+     "name": "언제 끝날지 모르는 상황에서의 loop",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-3n-plus-1-sequence",
+       "Introduction"
+      ],
+      [
+       "challenge-reading-k201521",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201832",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201833",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201647",
+       "Problem"
+      ],
+      [
+       "challenge-pow-of-2",
+       "Problem"
+      ],
+      [
+       "test-operatino-by-rule",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "any-condition-satisfying",
+     "name": "단 하나라도 만족하는 경우",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-c-between-a-and-b",
+       "Introduction"
+      ],
+      [
+       "challenge-factorization-discriminator",
+       "Problem"
+      ],
+      [
+       "test-presence-or-absence-of-a-common-divisor",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "all-condition-satisfying",
+     "name": "모두 만족하는 경우",
+     "chapter": "단순 반복문",
+     "cards": [
+      [
+       "intro-c-between-a-and-b-2",
+       "Introduction"
+      ],
+      [
+       "challenge-prime-number-discriminator",
+       "Problem"
+      ],
+      [
+       "test-all-multiples-of-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-rectangle",
+     "name": "사각형 별 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-stars-in-square",
+       "Introduction"
+      ],
+      [
+       "challenge-print-stars-in-rectangle",
+       "Problem"
+      ],
+      [
+       "test-output-two-rectangles",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-right-triangle",
+     "name": "직각삼각형  별 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-star-2",
+       "Introduction"
+      ],
+      [
+       "challenge-print-star-7",
+       "Problem"
+      ],
+      [
+       "challenge-print-star-5",
+       "Problem"
+      ],
+      [
+       "test-Right-triangle-and-output",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-row-symmetric",
+     "name": "행에 대해 대칭인 별 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-star",
+       "Introduction"
+      ],
+      [
+       "challenge-print-star-4",
+       "Problem"
+      ],
+      [
+       "test-skip-and-print-a-star",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-column-symmetric",
+     "name": "열에 대해 대칭인 별 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-star-3",
+       "Introduction"
+      ],
+      [
+       "challenge-print-star-9",
+       "Problem"
+      ],
+      [
+       "test-two-right-triangle",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-row-column-symmetric",
+     "name": "행, 열에 대해 대칭인 별 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-star-6",
+       "Introduction"
+      ],
+      [
+       "challenge-star-drawing",
+       "Problem"
+      ],
+      [
+       "challenge-character-output-according-to-rule",
+       "Problem"
+      ],
+      [
+       "test-check-diamond",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-rules-in-row",
+     "name": "행에 따라 다른 별 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-star-8",
+       "Introduction"
+      ],
+      [
+       "challenge-print-star-10",
+       "Problem"
+      ],
+      [
+       "test-print-start-13",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-regardless-of-shape",
+     "name": "모양과 관계 없는 별 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-star-11",
+       "Introduction"
+      ],
+      [
+       "challenge-print-star-12",
+       "Problem"
+      ],
+      [
+       "test-find-a-rule-and-print",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "general-order",
+     "name": "일반적인 순서로 숫자 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-in-row",
+       "Introduction"
+      ],
+      [
+       "challenge-print-in-column",
+       "Problem"
+      ],
+      [
+       "challenge-making-order-pair",
+       "Problem"
+      ],
+      [
+       "test-a-square-that-decreases-with-heat",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "mathematical-pattern",
+     "name": "수학적 규칙에 따라 숫자 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-row-column",
+       "Introduction"
+      ],
+      [
+       "challenge-square-with-odd-numbers",
+       "Problem"
+      ],
+      [
+       "test-left-right-inverted-square",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-number-using-cnt-variable",
+     "name": "cnt를 이용하여 숫자 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-square",
+       "Introduction"
+      ],
+      [
+       "challenge-1-9-square",
+       "Problem"
+      ],
+      [
+       "challenge-print-out-numbers-in-specific-shape-2",
+       "Problem"
+      ],
+      [
+       "test-9-1-square",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-pattern-row-column",
+     "name": "행, 열에 따라 다르게 숫자 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-in-left-right-reverse",
+       "Introduction"
+      ],
+      [
+       "challenge-print-in-up-down-reverse",
+       "Problem"
+      ],
+      [
+       "challenge-print-lr-zigzag",
+       "Problem"
+      ],
+      [
+       "test-output-defferently-each-row",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "multiplication-table",
+     "name": "구구단",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-normal-multiple",
+       "Introduction"
+      ],
+      [
+       "challenge-print-multiplication-table",
+       "Problem"
+      ],
+      [
+       "test-print-multiplication-table-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-as-shape",
+     "name": "모양대로 숫자 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-number-triangle",
+       "Introduction"
+      ],
+      [
+       "challenge-number-pyramid",
+       "Problem"
+      ],
+      [
+       "challenge-number-pyramid-3",
+       "Problem"
+      ],
+      [
+       "challenge-number-pyramid-2",
+       "Problem"
+      ],
+      [
+       "challenge-print-out-numbers-in-specific-shape",
+       "Problem"
+      ],
+      [
+       "challenge-output-numbers-according-to-specific-rule",
+       "Problem"
+      ],
+      [
+       "test-output-that-matches-the-rule",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-according-to-format",
+     "name": "포맷에 맞춰 숫자 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-one-line-multiple",
+       "Introduction"
+      ],
+      [
+       "intro-special-print",
+       "Introduction"
+      ],
+      [
+       "challenge-nineteen-times-table",
+       "Problem"
+      ],
+      [
+       "test-a-right-triangle-made-up-of-multiplication-tables",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "print-alphabet",
+     "name": "알파벳 출력",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-print-alpabet-in-square",
+       "Introduction"
+      ],
+      [
+       "challenge-print-alphabet",
+       "Problem"
+      ],
+      [
+       "test-print-alphabet-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "repeat-n-times",
+     "name": "n번 반복",
+     "chapter": "다중 반복문",
+     "cards": [
+      [
+       "intro-a-multiple-b-n-times",
+       "Introduction"
+      ],
+      [
+       "challenge-3n-plus-1-sequence-m-times",
+       "Problem"
+      ],
+      [
+       "challenge-perfect-number",
+       "Problem"
+      ],
+      [
+       "challenge-numbers-with-three-divisors",
+       "Problem"
+      ],
+      [
+       "challenge-get-prime",
+       "Problem"
+      ],
+      [
+       "test-find-the-sum-of-even-numbers-n-times",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "enter-multiple-in-one-line",
+     "name": "한 줄에 여러 개 입력",
+     "chapter": "1차원 배열",
+     "cards": [
+      [
+       "intro-sum-of-10-elements",
+       "Introduction"
+      ],
+      [
+       "intro-filling-array-and-print",
+       "Introduction"
+      ],
+      [
+       "intro-reaching-specific-number",
+       "Introduction"
+      ],
+      [
+       "intro-credit-calculator",
+       "Introduction"
+      ],
+      [
+       "challenge-print-average",
+       "Problem"
+      ],
+      [
+       "challenge-filling-array",
+       "Problem"
+      ],
+      [
+       "challenge-receive-10-inputs",
+       "Problem"
+      ],
+      [
+       "challenge-find-specific-location-of-array-4",
+       "Problem"
+      ],
+      [
+       "challenge-verify-test-passed-2",
+       "Problem"
+      ],
+      [
+       "test-print-even-numbers-upside-down",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "index",
+     "name": "인덱스 참조",
+     "chapter": "1차원 배열",
+     "cards": [
+      [
+       "intro-numbers-in-specific-location",
+       "Introduction"
+      ],
+      [
+       "intro-find-specific-location-fo-array",
+       "Introduction"
+      ],
+      [
+       "intro-find-specific-location-fo-array-3",
+       "Introduction"
+      ],
+      [
+       "challenge-char-in-specific-location-2",
+       "Problem"
+      ],
+      [
+       "challenge-find-specific-location-fo-array-2",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201523",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201524",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201527",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201532",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201545",
+       "Problem"
+      ],
+      [
+       "test-characteristics-of-elements-in-an-array",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "necessity-of-array",
+     "name": "배열 만들기",
+     "chapter": "1차원 배열",
+     "cards": [
+      [
+       "intro-print-square-of-elements",
+       "Introduction"
+      ],
+      [
+       "intro-array-with-units",
+       "Introduction"
+      ],
+      [
+       "challenge-print-even-number",
+       "Problem"
+      ],
+      [
+       "challenge-multiple-of-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-print-in-specific-conditions",
+       "Problem"
+      ],
+      [
+       "challenge-reach-100",
+       "Problem"
+      ],
+      [
+       "test-twice-the-previous",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "count-array",
+     "name": "Count 배열",
+     "chapter": "1차원 배열",
+     "cards": [
+      [
+       "intro-count-one-to-nine",
+       "Introduction"
+      ],
+      [
+       "challenge-play-with-dice",
+       "Problem"
+      ],
+      [
+       "challenge-number-of-tens-digit",
+       "Problem"
+      ],
+      [
+       "challenge-find-out-the-score-range",
+       "Problem"
+      ],
+      [
+       "challenge-covid-manual2",
+       "Problem"
+      ],
+      [
+       "test-remainder-of-division",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "retrieve-array",
+     "name": "탐색",
+     "chapter": "1차원 배열",
+     "cards": [
+      [
+       "intro-char-in-specific-location",
+       "Introduction"
+      ],
+      [
+       "intro-count-numbers",
+       "Introduction"
+      ],
+      [
+       "challenge-play-with-array",
+       "Problem"
+      ],
+      [
+       "challenge-contiguous-array-or-not",
+       "Problem"
+      ],
+      [
+       "test-where-2-appears-3rd",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "min-and-max",
+     "name": "Min/Max",
+     "chapter": "1차원 배열",
+     "cards": [
+      [
+       "intro-picking-biggest-number",
+       "Introduction"
+      ],
+      [
+       "intro-min-of-n-num",
+       "Introduction"
+      ],
+      [
+       "challenge-reading-k201520",
+       "Problem"
+      ],
+      [
+       "challenge-999-or-999",
+       "Problem"
+      ],
+      [
+       "challenge-two-max-of-n-num",
+       "Problem"
+      ],
+      [
+       "challenge-max-of-unique-number",
+       "Problem"
+      ],
+      [
+       "challenge-leftmost-max-value",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201536",
+       "Problem"
+      ],
+      [
+       "challenge-near-500",
+       "Problem"
+      ],
+      [
+       "challenge-max-profit-of-single-car",
+       "Problem"
+      ],
+      [
+       "test-minimum-difference-between-two-numbers",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "input-2d-array",
+     "name": "2차원 배열 입력",
+     "chapter": "2차원 배열",
+     "cards": [
+      [
+       "intro-sum-of-array",
+       "Introduction"
+      ],
+      [
+       "challenge-change-to-capital",
+       "Problem"
+      ],
+      [
+       "challenge-ave-of-array",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201531",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201650",
+       "Problem"
+      ],
+      [
+       "test-sum-of-specific-elements",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "define-2d-array",
+     "name": "새로운 2차원 배열의 선언",
+     "chapter": "2차원 배열",
+     "cards": [
+      [
+       "intro-rectangle-of-numbers",
+       "Introduction"
+      ],
+      [
+       "challenge-multiple-of-two-arrays",
+       "Problem"
+      ],
+      [
+       "test-compare-two-grid",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "draw-pattern-2d-array",
+     "name": "2차원 배열과 패턴",
+     "chapter": "2차원 배열",
+     "cards": [
+      [
+       "intro-filling-rectangle-with-downflow",
+       "Introduction"
+      ],
+      [
+       "challenge-zigzag-numbering",
+       "Problem"
+      ],
+      [
+       "challenge-diagonal-numbering",
+       "Problem"
+      ],
+      [
+       "test-grid-anti-fill",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "fill-in-order",
+     "name": "순서대로 채우기",
+     "chapter": "2차원 배열",
+     "cards": [
+      [
+       "intro-print-array-in-rectangle",
+       "Introduction"
+      ],
+      [
+       "challenge-pascals-triangle",
+       "Problem"
+      ],
+      [
+       "test-print-grid-in-rectangle",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "2d-array-as-grid",
+     "name": "격자로서의 2차원 배열",
+     "chapter": "2차원 배열",
+     "cards": [
+      [
+       "intro-Where-coins-are-located",
+       "Introduction"
+      ],
+      [
+       "challenge-draw-points-on-grid",
+       "Problem"
+      ],
+      [
+       "test-print-grid-shape",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "enter-string-without-blank",
+     "name": "공백없는 문자열 입력받아 출력하기",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-print-string-twice",
+       "Introduction"
+      ],
+      [
+       "intro-print-strings-length",
+       "Introduction"
+      ],
+      [
+       "challenge-longer-string",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201525",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201829",
+       "Problem"
+      ],
+      [
+       "test-shortest-string",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "enter-string-with-blank",
+     "name": "공백있는 문자열 한번에 입력받기",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-print-string-in-range",
+       "Introduction"
+      ],
+      [
+       "challenge-count-char",
+       "Problem"
+      ],
+      [
+       "test-output-based-on-space",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "array-of-strings",
+     "name": "문자열 리스트 관리",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-find-specific-location-in-spring-2",
+       "Introduction"
+      ],
+      [
+       "intro-print-string-in-reverse",
+       "Introduction"
+      ],
+      [
+       "intro-find-the-length-of-the-string",
+       "Introduction"
+      ],
+      [
+       "challenge-sum-length-of-string",
+       "Problem"
+      ],
+      [
+       "challenge-separate-words-with-words",
+       "Problem"
+      ],
+      [
+       "challenge-separate-words-with-words-2",
+       "Problem"
+      ],
+      [
+       "challenge-separate-words-with-words-3",
+       "Problem"
+      ],
+      [
+       "challenge-string-ending-with-specific-character",
+       "Problem"
+      ],
+      [
+       "test-strings-that-start-with-a-specific-character",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "retrieve-string",
+     "name": "문자열 순회하기",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-print-chars-from-word",
+       "Introduction"
+      ],
+      [
+       "challenge-print-string-in-range-2",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201723",
+       "Problem"
+      ],
+      [
+       "challenge-run-length-encoding",
+       "Problem"
+      ],
+      [
+       "test-print-only-even-numbers-backwards",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "string-concatenation",
+     "name": "문자열 Concat",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-add-spring",
+       "Introduction"
+      ],
+      [
+       "challenge-paste-all-string",
+       "Problem"
+      ],
+      [
+       "challenge-divide-string",
+       "Problem"
+      ],
+      [
+       "test-when-two-strings-are-concatenated",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "find-string",
+     "name": "문자열 찾기",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-specific-character-presence",
+       "Introduction"
+      ],
+      [
+       "intro-find-specific-location-in-spring",
+       "Introduction"
+      ],
+      [
+       "challenge-number-appearances-of-a-particular-character",
+       "Problem"
+      ],
+      [
+       "challenge-find-location-of-substring",
+       "Problem"
+      ],
+      [
+       "test-number-of-substrings",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "edit-character",
+     "name": "문자 수정",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-filling-with-a",
+       "Introduction"
+      ],
+      [
+       "challenge-changing-char",
+       "Problem"
+      ],
+      [
+       "challenge-exchange-1st-and-2nd",
+       "Problem"
+      ],
+      [
+       "challenge-play-with-string",
+       "Problem"
+      ],
+      [
+       "test-second-to-first",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "remove-character",
+     "name": "문자 삭제",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-del-both-side-char",
+       "Introduction"
+      ],
+      [
+       "challenge-del-char",
+       "Problem"
+      ],
+      [
+       "challenge-keep-removing-string",
+       "Problem"
+      ],
+      [
+       "test-e-to-remove",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "shift-string",
+     "name": "문자열 밀기",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-push-char",
+       "Introduction"
+      ],
+      [
+       "challenge-SPin-SPring",
+       "Problem"
+      ],
+      [
+       "challenge-shift-reverse-string",
+       "Problem"
+      ],
+      [
+       "test-push-by-the-rules",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "ascii-code",
+     "name": "아스키 코드",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-sum-and-subtract-in-ASCII",
+       "Introduction"
+      ],
+      [
+       "intro-chart-of-ASCII",
+       "Introduction"
+      ],
+      [
+       "challenge-convert-to-ascii",
+       "Problem"
+      ],
+      [
+       "challenge-next-alphabet",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201831",
+       "Problem"
+      ],
+      [
+       "test-before-the-alphabet",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "alphabet-case-conversion",
+     "name": "대소문자 변환",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-print-in-capital",
+       "Introduction"
+      ],
+      [
+       "challenge-letter-and-number",
+       "Problem"
+      ],
+      [
+       "challenge-add-only-integers",
+       "Problem"
+      ],
+      [
+       "test-change-uppercase-and-lowercase",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "string-to-int",
+     "name": "문자열을 정수로 변환하기",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-add-and-add",
+       "Introduction"
+      ],
+      [
+       "challenge-extract-only-integers",
+       "Problem"
+      ],
+      [
+       "test-remove-alphabet",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "int-to-string",
+     "name": "정수를 문자열로 변환하기",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-two-nums-sum-and-1",
+       "Introduction"
+      ],
+      [
+       "challenge-sum-of-each-digit",
+       "Problem"
+      ],
+      [
+       "test-push-the-sum-sideways-to-output",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "compare-strings",
+     "name": "문자열 비교",
+     "chapter": "문자열",
+     "cards": [
+      [
+       "intro-num-of-correct-string",
+       "Introduction"
+      ],
+      [
+       "challenge-print-string-backward",
+       "Problem"
+      ],
+      [
+       "challenge-number-of-spring",
+       "Problem"
+      ],
+      [
+       "test-number-of-pushes",
+       "Test"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "alias": "novice-mid",
+   "name": "프로그래밍 연습",
+   "order": 2,
+   "lessons": [
+    {
+     "alias": "function-without-return-value",
+     "name": "값을 반환하지 않는 함수",
+     "chapter": "함수",
+     "cards": [
+      [
+       "intro-repeat-shooting-the-stars-five-times",
+       "Introduction"
+      ],
+      [
+       "intro-repeated-output",
+       "Introduction"
+      ],
+      [
+       "intro-create-a-rectangle-using-a-function",
+       "Introduction"
+      ],
+      [
+       "challenge-rectangle-with-a-number",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201835",
+       "Problem"
+      ],
+      [
+       "challenge-find-the-greatest-common-divisor",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201827",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201544",
+       "Problem"
+      ],
+      [
+       "test-find-the-least-common-multiple",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "function-with-return-value",
+     "name": "값을 반환하는 함수",
+     "chapter": "함수",
+     "cards": [
+      [
+       "intro-sum-from-1-to-a-certain-number",
+       "Introduction"
+      ],
+      [
+       "intro-minimum-value-of-an-integer",
+       "Introduction"
+      ],
+      [
+       "intro-an-even-number-with-a-multiple-of-5-in-the-sum",
+       "Introduction"
+      ],
+      [
+       "intro-369-games-using-functions",
+       "Introduction"
+      ],
+      [
+       "intro-decimal-decisions-using-functions",
+       "Introduction"
+      ],
+      [
+       "intro-tell-the-function-using-a-leap-year",
+       "Introduction"
+      ],
+      [
+       "challenge-reading-k201534",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201720",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201840",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201727",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201732",
+       "Problem"
+      ],
+      [
+       "challenge-two-numbers-of-squares",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201547",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201820",
+       "Problem"
+      ],
+      [
+       "challenge-quadratic-operations-function",
+       "Problem"
+      ],
+      [
+       "challenge-determining-the-whole-number-using-a-function",
+       "Problem"
+      ],
+      [
+       "challenge-use-functions-to-determine-sums-and-decimals",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201821",
+       "Problem"
+      ],
+      [
+       "challenge-to-determine-whether-a-continuous-subsequence-is-made-using-a-function",
+       "Problem"
+      ],
+      [
+       "challenge-with-or-without-2021",
+       "Problem"
+      ],
+      [
+       "test-that-season-that-day",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "call-by-value-call-by-reference",
+     "name": "Call by value / Call by reference",
+     "chapter": "함수",
+     "cards": [
+      [
+       "intro-to-exchange-two-integer-values",
+       "Introduction"
+      ],
+      [
+       "intro-divide-even-numbers-by-2",
+       "Introduction"
+      ],
+      [
+       "intro-determine-whether-palindrome-is-present",
+       "Introduction"
+      ],
+      [
+       "challenge-reading-k201830",
+       "Problem"
+      ],
+      [
+       "challenge-operational-values-for-two-integers",
+       "Problem"
+      ],
+      [
+       "challenge-find-the-absolute-value",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201819",
+       "Problem"
+      ],
+      [
+       "challenge-more-than-one-alphabet",
+       "Problem"
+      ],
+      [
+       "test-operational-values-for-two-integers-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "scope",
+     "name": "변수의 영역",
+     "chapter": "함수",
+     "cards": [
+      [
+       "intro-find-the-location-of-a-substring-using-a-function",
+       "Introduction"
+      ],
+      [
+       "intro-reading-84",
+       "Introduction"
+      ],
+      [
+       "intro-reading-85",
+       "Introduction"
+      ],
+      [
+       "challenge-divide-and-subtract-and-add-up",
+       "Problem"
+      ],
+      [
+       "challenge-reading-87",
+       "Problem"
+      ],
+      [
+       "challenge-reading-86",
+       "Problem"
+      ],
+      [
+       "test-sum-of-specific-intervals",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "recursive-function-no-return-value",
+     "name": "값을 반환하지 않는 재귀함수",
+     "chapter": "재귀함수",
+     "cards": [
+      [
+       "intro-repeated-output-2",
+       "Introduction"
+      ],
+      [
+       "intro-to-output-numerically",
+       "Introduction"
+      ],
+      [
+       "challenge-star-output-with-recursive-function",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201838",
+       "Problem"
+      ],
+      [
+       "challenge-the-flower-of-the-recursive-function",
+       "Problem"
+      ],
+      [
+       "test-star-output-with-recursive-function-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "recursive-function-with-return-value",
+     "name": "값을 반환하는 재귀함수",
+     "chapter": "재귀함수",
+     "cards": [
+      [
+       "intro-sum-from-1-to-a-certain-number-2",
+       "Introduction"
+      ],
+      [
+       "intro-square-of-each-digit",
+       "Introduction"
+      ],
+      [
+       "intro-until-the-moment-I-reach-one",
+       "Introduction"
+      ],
+      [
+       "intro-fibonacci-using-recursive-function",
+       "Introduction"
+      ],
+      [
+       "intro-reading-k201529",
+       "Introduction"
+      ],
+      [
+       "challenge-factorial",
+       "Problem"
+      ],
+      [
+       "challenge-output-value-based-on-odd-even-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201828",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201728",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-value-with-recursive-function",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201540",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-large-numeric-digits",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201542",
+       "Problem"
+      ],
+      [
+       "challenge-3n-plus-1-sequence-with-recursive-function",
+       "Problem"
+      ],
+      [
+       "challenge-sequence-of-remainder-divided-by-100",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201629",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201839",
+       "Problem"
+      ],
+      [
+       "challenge-a-strange-sequence",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201631",
+       "Problem"
+      ],
+      [
+       "challenge-reading-k201628",
+       "Problem"
+      ],
+      [
+       "test-least-common-multiple-using-recursive-function",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "general-sort",
+     "name": "일반 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-inc-dec-sorting",
+       "Introduction"
+      ],
+      [
+       "intro-string-sort",
+       "Introduction"
+      ],
+      [
+       "intro-sorting-words",
+       "Introduction"
+      ],
+      [
+       "challenge-kth-number",
+       "Problem"
+      ],
+      [
+       "challenge-two-equal-series",
+       "Problem"
+      ],
+      [
+       "challenge-group-of-pairs",
+       "Problem"
+      ],
+      [
+       "challenge-determine-same-word",
+       "Problem"
+      ],
+      [
+       "challenge-kth-special-string",
+       "Problem"
+      ],
+      [
+       "test-get-median-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "class",
+     "name": "객체",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-007",
+       "Introduction"
+      ],
+      [
+       "intro-next-level",
+       "Introduction"
+      ],
+      [
+       "intro-code-name",
+       "Introduction"
+      ],
+      [
+       "challenge-bomb-removal",
+       "Problem"
+      ],
+      [
+       "challenge-product-code",
+       "Problem"
+      ],
+      [
+       "challenge-where-live",
+       "Problem"
+      ],
+      [
+       "test-rainy-day",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "object-sorting",
+     "name": "객체 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-sort-by-height",
+       "Introduction"
+      ],
+      [
+       "intro-korean-english-math-order",
+       "Introduction"
+      ],
+      [
+       "intro-compare-total-points",
+       "Introduction"
+      ],
+      [
+       "intro-line-up-students",
+       "Introduction"
+      ],
+      [
+       "challenge-personal-info",
+       "Problem"
+      ],
+      [
+       "challenge-sort-by-height-and-weight",
+       "Problem"
+      ],
+      [
+       "challenge-distance-from-origin",
+       "Problem"
+      ],
+      [
+       "challenge-indices-of-sorted-array",
+       "Problem"
+      ],
+      [
+       "test-line-up-students-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "datetime-calculation",
+     "name": "날짜와 시간 계산",
+     "chapter": "시뮬레이션 I",
+     "cards": [
+      [
+       "intro-time-to-time",
+       "Introduction"
+      ],
+      [
+       "intro-date-to-date",
+       "Introduction"
+      ],
+      [
+       "challenge-datetime-to-datetime",
+       "Problem"
+      ],
+      [
+       "challenge-guess-day-of-week",
+       "Problem"
+      ],
+      [
+       "test-the-day-of-the-day",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "notation",
+     "name": "Notation",
+     "chapter": "시뮬레이션 I",
+     "cards": [
+      [
+       "intro-convert-to-binary",
+       "Introduction"
+      ],
+      [
+       "intro-convert-to-decimal",
+       "Introduction"
+      ],
+      [
+       "challenge-various-numeral-system-transformations",
+       "Problem"
+      ],
+      [
+       "challenge-decimal-and-binary-number-2",
+       "Problem"
+      ],
+      [
+       "test-transformation-of-number-system",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "flood-fill-1d",
+     "name": "구간 칠하기",
+     "chapter": "시뮬레이션 I",
+     "cards": [
+      [
+       "intro-block-stacking-commands2",
+       "Introduction"
+      ],
+      [
+       "intro-maximum-overlapped-segments",
+       "Introduction"
+      ],
+      [
+       "challenge-maximum-overlapped-points",
+       "Problem"
+      ],
+      [
+       "challenge-area-been-to-and-from2",
+       "Problem"
+      ],
+      [
+       "challenge-painting-white-black",
+       "Problem"
+      ],
+      [
+       "test-strange-flipping-tiles",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "flood-fill-2d",
+     "name": "사각형 칠하기",
+     "chapter": "시뮬레이션 I",
+     "cards": [
+      [
+       "intro-total-width-of-a-rectangle2",
+       "Introduction"
+      ],
+      [
+       "intro-area-of-non-overlapping-rectangle",
+       "Introduction"
+      ],
+      [
+       "challenge-the-total-area-of-colored-paper",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-area-of-rectangle-to-cover-debris",
+       "Problem"
+      ],
+      [
+       "test-continuously-overlapping-squares",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "longest-subsequence",
+     "name": "최장 연속 부분 수열",
+     "chapter": "시뮬레이션 II",
+     "cards": [
+      [
+       "intro-continuous-number2",
+       "Introduction"
+      ],
+      [
+       "challenge-continuous-number3",
+       "Problem"
+      ],
+      [
+       "challenge-continuous-number4",
+       "Problem"
+      ],
+      [
+       "test-subsequence-above-t",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "keep-track-with-array",
+     "name": "배열 기록",
+     "chapter": "시뮬레이션 II",
+     "cards": [
+      [
+       "intro-the-moment-we-meet",
+       "Introduction"
+      ],
+      [
+       "intro-who-will-pay",
+       "Introduction"
+      ],
+      [
+       "challenge-keep-the-lead",
+       "Problem"
+      ],
+      [
+       "challenge-robot-moving-from-side-to-side",
+       "Problem"
+      ],
+      [
+       "challenge-correlation-between-shaking-hands-and-infectious-diseases2",
+       "Problem"
+      ],
+      [
+       "test-keep-the-lead-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "dx-dy-technique",
+     "name": "dx dy technique",
+     "chapter": "시뮬레이션 II",
+     "cards": [
+      [
+       "intro-move-in-direction",
+       "Introduction"
+      ],
+      [
+       "intro-text-based-commands2",
+       "Introduction"
+      ],
+      [
+       "intro-place-more-than-3-ones",
+       "Introduction"
+      ],
+      [
+       "intro-small-marble-movement",
+       "Introduction"
+      ],
+      [
+       "intro-snail-number-square",
+       "Introduction"
+      ],
+      [
+       "challenge-come-back",
+       "Problem"
+      ],
+      [
+       "challenge-come-back-2",
+       "Problem"
+      ],
+      [
+       "challenge-comfortable-state-on-the-grid",
+       "Problem"
+      ],
+      [
+       "challenge-shoot-a-laser-in-the-mirror-2",
+       "Problem"
+      ],
+      [
+       "challenge-snail-number-square-2",
+       "Problem"
+      ],
+      [
+       "challenge-snail-alphabet-square",
+       "Problem"
+      ],
+      [
+       "challenge-snail-start-from-center",
+       "Problem"
+      ],
+      [
+       "test-add-all-the-numbers-on-the-path",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "index-based-search",
+     "name": "자리 수 단위로 완전탐색",
+     "chapter": "완전탐색 I",
+     "cards": [
+      [
+       "intro-gather",
+       "Introduction"
+      ],
+      [
+       "intro-pair-parentheses-3",
+       "Introduction"
+      ],
+      [
+       "intro-cattle-in-a-rowing-up-2",
+       "Introduction"
+      ],
+      [
+       "intro-best-place-of-13",
+       "Introduction"
+      ],
+      [
+       "intro-on-the-checkboard-2",
+       "Introduction"
+      ],
+      [
+       "challenge-awkward-digits-2",
+       "Problem"
+      ],
+      [
+       "challenge-taking-a-taxi-in-the-middle-of-the-marathon-2",
+       "Problem"
+      ],
+      [
+       "challenge-a-room-in-a-circle",
+       "Problem"
+      ],
+      [
+       "challenge-pair-parentheses-2",
+       "Problem"
+      ],
+      [
+       "challenge-two-non-adjacent-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-c-o-w-2",
+       "Problem"
+      ],
+      [
+       "challenge-escaping-carry-2",
+       "Problem"
+      ],
+      [
+       "challenge-O-mok",
+       "Problem"
+      ],
+      [
+       "challenge-find-hidden-words-2",
+       "Problem"
+      ],
+      [
+       "challenge-best-place-of-13-2",
+       "Problem"
+      ],
+      [
+       "test-sum-close-to-particular-number",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "interval-based-exhaustive-search",
+     "name": "구간 단위로 완전탐색",
+     "chapter": "완전탐색 I",
+     "cards": [
+      [
+       "intro-max-sum-of-subarray",
+       "Introduction"
+      ],
+      [
+       "intro-G-or-H-3",
+       "Introduction"
+      ],
+      [
+       "intro-elemental-mean-value-for-a-particular-interval",
+       "Introduction"
+      ],
+      [
+       "challenge-beautiful-sequence-2",
+       "Problem"
+      ],
+      [
+       "challenge-candy-in-the-basket-2",
+       "Problem"
+      ],
+      [
+       "challenge-G-or-H-2",
+       "Problem"
+      ],
+      [
+       "test-equalizing-the-height-of-the-field",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "set-number-for-each-digit",
+     "name": "자리 마다 숫자를 정하는 완전탐색",
+     "chapter": "완전탐색 I",
+     "cards": [
+      [
+       "intro-one-way-lock",
+       "Introduction"
+      ],
+      [
+       "intro-ability-of-developer-3",
+       "Introduction"
+      ],
+      [
+       "challenge-a-two-way-lock",
+       "Problem"
+      ],
+      [
+       "challenge-numeric-count",
+       "Problem"
+      ],
+      [
+       "challenge-ability-of-developer-2",
+       "Problem"
+      ],
+      [
+       "test-the-capabilities-of-the-development-team",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "object-based-search",
+     "name": "물체 단위로 완전탐색",
+     "chapter": "완전탐색 II",
+     "cards": [
+      [
+       "intro-specific-zone-above-the-2d-coordinate-2",
+       "Introduction"
+      ],
+      [
+       "intro-closest-pair-of-points",
+       "Introduction"
+      ],
+      [
+       "intro-create-triangle",
+       "Introduction"
+      ],
+      [
+       "challenge-hours-in-service",
+       "Problem"
+      ],
+      [
+       "challenge-line-segments-that-do-not-overlap-2",
+       "Problem"
+      ],
+      [
+       "challenge-the-grace-form-teacher-2",
+       "Problem"
+      ],
+      [
+       "challenge-rotten-cheese",
+       "Problem"
+      ],
+      [
+       "challenge-developers-rank",
+       "Problem"
+      ],
+      [
+       "challenge-strange-bomb-2",
+       "Problem"
+      ],
+      [
+       "challenge-remove-three-segments",
+       "Problem"
+      ],
+      [
+       "test-the-grace-form-teacher-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "value-based-search",
+     "name": "값을 기준으로 완전탐색",
+     "chapter": "완전탐색 II",
+     "cards": [
+      [
+       "intro-maximum-of-sum-of-numbers",
+       "Introduction"
+      ],
+      [
+       "intro-adjusting-the-temperature-of-the-data-center-2",
+       "Introduction"
+      ],
+      [
+       "challenge-interesting-numbers-2",
+       "Problem"
+      ],
+      [
+       "challenge-number-based-on-information-2",
+       "Problem"
+      ],
+      [
+       "challenge-arithmetic-sequence",
+       "Problem"
+      ],
+      [
+       "challenge-the-tip-of-the-iceberg-2",
+       "Problem"
+      ],
+      [
+       "test-find-the-number-of-palindrome",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "assume-a-value",
+     "name": "상황을 일일이 가정해보고 진행하는 완전탐색",
+     "chapter": "완전탐색 III",
+     "cards": [
+      [
+       "intro-ya-rock",
+       "Introduction"
+      ],
+      [
+       "intro-multiply-two-and-remove-one-number",
+       "Introduction"
+      ],
+      [
+       "challenge-create-a-specific-number-using-multiple-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-three-lines-2",
+       "Problem"
+      ],
+      [
+       "challenge-balance-on-coordinate-plane-2",
+       "Problem"
+      ],
+      [
+       "challenge-tic-tac-to-as-a-team-2",
+       "Problem"
+      ],
+      [
+       "challenge-length-of-string-that-does-not-appear",
+       "Problem"
+      ],
+      [
+       "test-maximum-sum-of-element-values",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "set-new-standards",
+     "name": "기준을 새로 설정하여 완전탐색",
+     "chapter": "완전탐색 III",
+     "cards": [
+      [
+       "intro-study-cafe-keeping-distance-5",
+       "Introduction"
+      ],
+      [
+       "intro-find-smallest-x",
+       "Introduction"
+      ],
+      [
+       "intro-the-most-frequent-pair",
+       "Introduction"
+      ],
+      [
+       "intro-maximum-difference-in-numbers",
+       "Introduction"
+      ],
+      [
+       "intro-great-jump",
+       "Introduction"
+      ],
+      [
+       "challenge-find-a-b-c-d-2",
+       "Problem"
+      ],
+      [
+       "challenge-study-cafe-keeping-distance-4",
+       "Problem"
+      ],
+      [
+       "challenge-restore-initial-sequence",
+       "Problem"
+      ],
+      [
+       "challenge-strange-bomb-3",
+       "Problem"
+      ],
+      [
+       "challenge-hill-cutting",
+       "Problem"
+      ],
+      [
+       "challenge-divide-sections-well",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-h-score-2",
+       "Problem"
+      ],
+      [
+       "test-difference-between-maximum-and-minimum",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "overlapping-cases",
+     "name": "겹치는 경우",
+     "chapter": "케이스별로 나누기",
+     "cards": [
+      [
+       "intro-two-lines",
+       "Introduction"
+      ],
+      [
+       "intro-two-rectangles",
+       "Introduction"
+      ],
+      [
+       "challenge-district-cleaning",
+       "Problem"
+      ],
+      [
+       "challenge-overlapping-line-segments",
+       "Problem"
+      ],
+      [
+       "test-overlapping-line-segments-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "reasoning",
+     "name": "일어난 상황에 대한 추론",
+     "chapter": "케이스별로 나누기",
+     "cards": [
+      [
+       "intro-pigeons-and-electric-cords",
+       "Introduction"
+      ],
+      [
+       "challenge-run-and-run",
+       "Problem"
+      ],
+      [
+       "challenge-coding-talk",
+       "Problem"
+      ],
+      [
+       "test-x-run",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "organize-strategy",
+     "name": "좋은 전략을 추려내기",
+     "chapter": "케이스별로 나누기",
+     "cards": [
+      [
+       "intro-teleportation",
+       "Introduction"
+      ],
+      [
+       "intro-create-consecutive-numbers-2",
+       "Introduction"
+      ],
+      [
+       "intro-study-cafe-keeping-distance-3",
+       "Introduction"
+      ],
+      [
+       "challenge-developers-rock-paper-scissors",
+       "Problem"
+      ],
+      [
+       "challenge-create-consecutive-numbers-3",
+       "Problem"
+      ],
+      [
+       "challenge-study-cafe-keeping-distance-2",
+       "Problem"
+      ],
+      [
+       "test-abc-line-up",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "list-all-possible-situations",
+     "name": "가능한 상황을 나열하기",
+     "chapter": "케이스별로 나누기",
+     "cards": [
+      [
+       "intro-ranking-competition2",
+       "Introduction"
+      ],
+      [
+       "challenge-location-of-the-second-smallest-number",
+       "Problem"
+      ],
+      [
+       "challenge-l-r-and-b",
+       "Problem"
+      ],
+      [
+       "challenge-ranking-competition",
+       "Problem"
+      ],
+      [
+       "test-maximum-product-of-three-numbers",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "clearly-defined-optimal-strategy",
+     "name": "지극히 최선인 전략이 확실히 정해지는 경우",
+     "chapter": "Ad-Hoc",
+     "cards": [
+      [
+       "intro-moving-block",
+       "Introduction"
+      ],
+      [
+       "intro-minimum-number-of-wifi",
+       "Introduction"
+      ],
+      [
+       "challenge-odd-even-bundle",
+       "Problem"
+      ],
+      [
+       "challenge-reorder-sequence",
+       "Problem"
+      ],
+      [
+       "test-group-of-pairs-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "obvious-candidates",
+     "name": "고려해야 할 대상이 뚜렷이 정해지는 경우",
+     "chapter": "Ad-Hoc",
+     "cards": [
+      [
+       "intro-finding-a-b-c",
+       "Introduction"
+      ],
+      [
+       "intro-rectangle-made-of-two-points",
+       "Introduction"
+      ],
+      [
+       "challenge-find-a-b-c-d",
+       "Problem"
+      ],
+      [
+       "challenge-square-made-of-two-points",
+       "Problem"
+      ],
+      [
+       "test-all-inclusive-segment",
+       "Test"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "alias": "novice-high",
+   "name": "자료구조 알고리즘",
+   "order": 3,
+   "lessons": [
+    {
+     "alias": "pseudo-code",
+     "name": "수도코드",
+     "chapter": "시간, 공간복잡도",
+     "cards": [
+      [
+       "intro-pseudo-code",
+       "Introduction"
+      ],
+      [
+       "challenge-pseudo-code-2",
+       "Problem"
+      ],
+      [
+       "test-pseudo-code-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "asymptotic-notation",
+     "name": "점근 표기법",
+     "chapter": "시간, 공간복잡도",
+     "cards": [
+      [
+       "intro-translate-notation",
+       "Introduction"
+      ],
+      [
+       "challenge-asymptotic-notation",
+       "Problem"
+      ],
+      [
+       "challenge-penthouse",
+       "Problem"
+      ],
+      [
+       "test-time-complexity",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "definition-of-time-complexity",
+     "name": "시간복잡도의 정의",
+     "chapter": "시간, 공간복잡도",
+     "cards": [
+      [
+       "intro-basic-time-complexity",
+       "Introduction"
+      ],
+      [
+       "challenge-time-complexity-1",
+       "Problem"
+      ],
+      [
+       "challenge-reason-why-use-bigo",
+       "Problem"
+      ],
+      [
+       "challenge-time-complexity-concept",
+       "Problem"
+      ],
+      [
+       "test-usage-of-time-complexity",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "time-complexity-in-for-loop",
+     "name": "반복문의 시간복잡도",
+     "chapter": "시간, 공간복잡도",
+     "cards": [
+      [
+       "intro-for-and-while",
+       "Introduction"
+      ],
+      [
+       "challenge-time-complexity-and-for-loop-1",
+       "Problem"
+      ],
+      [
+       "challenge-time-complexity-and-for-loop-2",
+       "Problem"
+      ],
+      [
+       "challenge-time-complexity-2",
+       "Problem"
+      ],
+      [
+       "challenge-time-complexity-sort",
+       "Problem"
+      ],
+      [
+       "challenge-time-complexity-3",
+       "Problem"
+      ],
+      [
+       "challenge-time-complexity-and-for-loop-4",
+       "Problem"
+      ],
+      [
+       "test-time-complexity-and-for-loop-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "time-complexity-in-recursion",
+     "name": "재귀함수의 시간복잡도",
+     "chapter": "시간, 공간복잡도",
+     "cards": [
+      [
+       "intro-recursive-time-complexity",
+       "Introduction"
+      ],
+      [
+       "challenge-time-complexity-5",
+       "Problem"
+      ],
+      [
+       "test-time-complexity-4",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "space-complexity",
+     "name": "공간복잡도",
+     "chapter": "시간, 공간복잡도",
+     "cards": [
+      [
+       "intro-space-complexity",
+       "Introduction"
+      ],
+      [
+       "challenge-space-complexity-cal",
+       "Problem"
+      ],
+      [
+       "challenge-usage-of-space-complexity",
+       "Problem"
+      ],
+      [
+       "test-space-complexity-concept",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "array",
+     "name": "배열",
+     "chapter": "배열, 연결 리스트",
+     "cards": [
+      [
+       "intro-array-operation",
+       "Introduction"
+      ],
+      [
+       "test-array-concept",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "dynamic-array-vector",
+     "name": "Dynamic Array",
+     "chapter": "배열, 연결 리스트",
+     "cards": [
+      [
+       "intro-dynamic-array-concept",
+       "Introduction"
+      ],
+      [
+       "test-process-numeric-commands-5",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "single-linked-list",
+     "name": "단일 연결 리스트",
+     "chapter": "배열, 연결 리스트",
+     "cards": [
+      [
+       "intro-node-definition",
+       "Introduction"
+      ],
+      [
+       "intro-singly-linked-list",
+       "Introduction"
+      ],
+      [
+       "intro-singly-linked-list-make",
+       "Introduction"
+      ],
+      [
+       "challenge-correct-insertion",
+       "Problem"
+      ],
+      [
+       "challenge-correct-deletion",
+       "Problem"
+      ],
+      [
+       "challenge-linked-list-merge",
+       "Problem"
+      ],
+      [
+       "test-singly-linked-list-work",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-doubly-linked-list",
+     "name": "Doubly-LinkedList",
+     "chapter": "배열, 연결 리스트",
+     "cards": [
+      [
+       "intro-singly-and-doubly",
+       "Introduction"
+      ],
+      [
+       "intro-doubly-linked-list",
+       "Introduction"
+      ],
+      [
+       "intro-process-numeric-commands-8",
+       "Introduction"
+      ],
+      [
+       "challenge-doubly-linked-list-move",
+       "Problem"
+      ],
+      [
+       "challenge-doubly-linked-list-remove",
+       "Problem"
+      ],
+      [
+       "challenge-doubly-linked-list-remove-2",
+       "Problem"
+      ],
+      [
+       "test-deletion-method-from-tail",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "iterator",
+     "name": "Iterator",
+     "chapter": "배열, 연결 리스트",
+     "cards": [
+      [
+       "intro-doubly-linked-list-iterator-2",
+       "Introduction"
+      ],
+      [
+       "intro-golden-toast",
+       "Introduction"
+      ],
+      [
+       "challenge-palindrome-and-linkedlist",
+       "Problem"
+      ],
+      [
+       "challenge-reverse-iterator",
+       "Problem"
+      ],
+      [
+       "challenge-Iterator-effect",
+       "Problem"
+      ],
+      [
+       "test-doubly-linked-list-iterator",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "circular-linked-list",
+     "name": "원형 연결 리스트",
+     "chapter": "배열, 연결 리스트",
+     "cards": [
+      [
+       "intro-circular-linked-list",
+       "Introduction"
+      ],
+      [
+       "challenge-circular-linked-list-working",
+       "Problem"
+      ],
+      [
+       "challenge-two-circular-linked-lists",
+       "Problem"
+      ],
+      [
+       "test-circulation",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "bubble-sort",
+     "name": "거품 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-bubble-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-prelude-of-bubble-sort",
+       "Problem"
+      ],
+      [
+       "challenge-already-sorted-bubble",
+       "Problem"
+      ],
+      [
+       "challenge-implement-bubble-sort",
+       "Problem"
+      ],
+      [
+       "test-bubble-sort-progress",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "selection-sort",
+     "name": "선택 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-selection-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-bookshelf",
+       "Problem"
+      ],
+      [
+       "challenge-implement-selection-sort",
+       "Problem"
+      ],
+      [
+       "test-selection-sort-progress",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "insertion-sort",
+     "name": "삽입 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-insertion-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-insertion-sort-count",
+       "Problem"
+      ],
+      [
+       "challenge-implement-insertion-sort",
+       "Problem"
+      ],
+      [
+       "test-insertion-sort-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "radix-sort",
+     "name": "기수 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-radix-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-correct-radix",
+       "Problem"
+      ],
+      [
+       "challenge-implement-radix-sort",
+       "Problem"
+      ],
+      [
+       "test-radix-sort-progress",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "speed-comparison",
+     "name": "정렬 속도 비교",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-sorting-speed",
+       "Introduction"
+      ],
+      [
+       "challenge-acorn-sort",
+       "Problem"
+      ],
+      [
+       "test-sort-compare",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "merge-sort",
+     "name": "병합 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-merge-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-merge-sort-speed",
+       "Problem"
+      ],
+      [
+       "challenge-implement-merge-sort",
+       "Problem"
+      ],
+      [
+       "test-merge-sort-progress",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "quick-sort",
+     "name": "퀵 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-quick-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-quick-sort-pivot",
+       "Problem"
+      ],
+      [
+       "challenge-quick-sort-possible",
+       "Problem"
+      ],
+      [
+       "challenge-implement-quick-sort",
+       "Problem"
+      ],
+      [
+       "test-quick-sort-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "heap-sort",
+     "name": "힙 정렬",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-heap-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-heap-sort-concepts",
+       "Problem"
+      ],
+      [
+       "challenge-implement-heap-sort",
+       "Problem"
+      ],
+      [
+       "test-heap-sort-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "stable-sort",
+     "name": "Stable Sort",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-stable-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-is-stable",
+       "Problem"
+      ],
+      [
+       "test-stable-sort-concept",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "in-place-sort",
+     "name": "In-Place Sort",
+     "chapter": "정렬",
+     "cards": [
+      [
+       "intro-in-place-sort",
+       "Introduction"
+      ],
+      [
+       "challenge-possibility-of-in-place-sort",
+       "Problem"
+      ],
+      [
+       "test-in-place-sort-concept",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-binary-search",
+     "name": "이진탐색",
+     "chapter": "이진탐색",
+     "cards": [
+      [
+       "intro-binary-search",
+       "Introduction"
+      ],
+      [
+       "intro-binary-linear",
+       "Introduction"
+      ],
+      [
+       "challenge-binary-count",
+       "Problem"
+      ],
+      [
+       "challenge-non-sorted",
+       "Problem"
+      ],
+      [
+       "challenge-binary-miss",
+       "Problem"
+      ],
+      [
+       "challenge-binary-dupil",
+       "Problem"
+      ],
+      [
+       "challenge-binary-selection",
+       "Problem"
+      ],
+      [
+       "challenge-binary-wrong",
+       "Problem"
+      ],
+      [
+       "test-binary-search-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "lower-upper-bound",
+     "name": "Lower/Upper Bound",
+     "chapter": "이진탐색",
+     "cards": [
+      [
+       "intro-lower-upper",
+       "Introduction"
+      ],
+      [
+       "challenge-lower-bound",
+       "Problem"
+      ],
+      [
+       "challenge-lower-upper-practice",
+       "Problem"
+      ],
+      [
+       "challenge-lower-upper-find",
+       "Problem"
+      ],
+      [
+       "challenge-lower-upper-range",
+       "Problem"
+      ],
+      [
+       "challenge-bound-code",
+       "Problem"
+      ],
+      [
+       "test-upper-bound",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "stack",
+     "name": "Stack",
+     "chapter": "스택, 큐, 덱",
+     "cards": [
+      [
+       "intro-stack-concept",
+       "Introduction"
+      ],
+      [
+       "intro-stack-apply-string",
+       "Introduction"
+      ],
+      [
+       "intro-array-and-stack",
+       "Introduction"
+      ],
+      [
+       "intro-stack-fibbo",
+       "Introduction"
+      ],
+      [
+       "intro-process-numeric-commands",
+       "Introduction"
+      ],
+      [
+       "challenge-stack-string",
+       "Problem"
+      ],
+      [
+       "challenge-array-versus-stack",
+       "Problem"
+      ],
+      [
+       "challenge-stack-basic",
+       "Problem"
+      ],
+      [
+       "challenge-stack-increasing-sequence",
+       "Problem"
+      ],
+      [
+       "challenge-parentheses-string",
+       "Problem"
+      ],
+      [
+       "challenge-stack-old",
+       "Problem"
+      ],
+      [
+       "test-stack-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "queue",
+     "name": "Queue",
+     "chapter": "스택, 큐, 덱",
+     "cards": [
+      [
+       "intro-queue-basic",
+       "Introduction"
+      ],
+      [
+       "intro-asq-time-2",
+       "Introduction"
+      ],
+      [
+       "intro-queue-josephus",
+       "Introduction"
+      ],
+      [
+       "intro-process-numeric-commands-2",
+       "Introduction"
+      ],
+      [
+       "challenge-stack-versus-queue",
+       "Problem"
+      ],
+      [
+       "challenge-queue-reverse",
+       "Problem"
+      ],
+      [
+       "challenge-josephus-permutations",
+       "Problem"
+      ],
+      [
+       "test-queue-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "deque",
+     "name": "Deque",
+     "chapter": "스택, 큐, 덱",
+     "cards": [
+      [
+       "intro-deque-basic",
+       "Introduction"
+      ],
+      [
+       "intro-process-numeric-commands-3",
+       "Introduction"
+      ],
+      [
+       "challenge-deque-compare",
+       "Problem"
+      ],
+      [
+       "challenge-sequence-manipulation",
+       "Problem"
+      ],
+      [
+       "test-deque-method",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-tree",
+     "name": "트리",
+     "chapter": "트리",
+     "cards": [
+      [
+       "intro-tree-introduction",
+       "Introduction"
+      ],
+      [
+       "test-tree-conception",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "binary-tree-concept",
+     "name": "이진 트리 개념",
+     "chapter": "트리",
+     "cards": [
+      [
+       "intro-binary-tree-introduction",
+       "Introduction"
+      ],
+      [
+       "test-binary-tree-shape",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "traversal",
+     "name": "이진 트리와 탐색",
+     "chapter": "트리",
+     "cards": [
+      [
+       "intro-tree-traversal",
+       "Introduction"
+      ],
+      [
+       "challenge-inorder-postorder",
+       "Problem"
+      ],
+      [
+       "challenge-traversal-inference",
+       "Problem"
+      ],
+      [
+       "test-preorder-traversal",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "binary-search-tree",
+     "name": "이진 탐색 트리",
+     "chapter": "트리",
+     "cards": [
+      [
+       "intro-find-spy",
+       "Introduction"
+      ],
+      [
+       "intro-bst-search",
+       "Introduction"
+      ],
+      [
+       "intro-bst-insert",
+       "Introduction"
+      ],
+      [
+       "intro-bst-delete",
+       "Introduction"
+      ],
+      [
+       "intro-balanced-binary-tree",
+       "Introduction"
+      ],
+      [
+       "challenge-bst-concept",
+       "Problem"
+      ],
+      [
+       "challenge-bst-inorder",
+       "Problem"
+      ],
+      [
+       "challenge-bst-methods",
+       "Problem"
+      ],
+      [
+       "challenge-bst-deletion",
+       "Problem"
+      ],
+      [
+       "challenge-bst-inference",
+       "Problem"
+      ],
+      [
+       "test-bst-insertion",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "heap",
+     "name": "Heap",
+     "chapter": "트리",
+     "cards": [
+      [
+       "intro-heap-concept",
+       "Introduction"
+      ],
+      [
+       "intro-max-heap",
+       "Introduction"
+      ],
+      [
+       "intro-heap-methods",
+       "Introduction"
+      ],
+      [
+       "challenge-heap-shape",
+       "Problem"
+      ],
+      [
+       "challenge-heap-deletion",
+       "Problem"
+      ],
+      [
+       "challenge-heap-find",
+       "Problem"
+      ],
+      [
+       "test-heap-insertion",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "hashing",
+     "name": "해싱",
+     "chapter": "해싱",
+     "cards": [
+      [
+       "intro-hash-introduction",
+       "Introduction"
+      ],
+      [
+       "intro-hash-collusion",
+       "Introduction"
+      ],
+      [
+       "challenge-hash-concept",
+       "Problem"
+      ],
+      [
+       "challenge-hash-effectivity",
+       "Problem"
+      ],
+      [
+       "test-hash-function",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "dp-concept",
+     "name": "동적계획법",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dynamic-programming-concept",
+       "Introduction"
+      ],
+      [
+       "test-apply-dynamic-programming",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "memoization",
+     "name": "Memoization",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dp-fibbo",
+       "Introduction"
+      ],
+      [
+       "challenge-dp-padovan",
+       "Problem"
+      ],
+      [
+       "challenge-dp-padovan-td",
+       "Problem"
+      ],
+      [
+       "test-dp-fibbo-td",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "tabulation",
+     "name": "Tabulation",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dp-fibbo-memo",
+       "Introduction"
+      ],
+      [
+       "challenge-dp-td-and-bu",
+       "Problem"
+      ],
+      [
+       "test-dp-padovan-wrong",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "call-and-merge-subproblems",
+     "name": "subproblem을 그대로 합치면 되는 DP",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dp-modeling-tile1",
+       "Introduction"
+      ],
+      [
+       "challenge-number-of-bst",
+       "Problem"
+      ],
+      [
+       "challenge-dp-modeling-tile2",
+       "Problem"
+      ],
+      [
+       "test-dp-number-fibbo",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-one-object-moving-in-grid",
+     "name": "격자 안에서 한 칸씩 전진하는 DP",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dp-modeling-triangle",
+       "Introduction"
+      ],
+      [
+       "test-max-sum-in-grid",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "optional-selection-dp",
+     "name": "조건에 맞게 선택적으로 전진하는 DP",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dp-lis-1",
+       "Introduction"
+      ],
+      [
+       "test-dp-lis-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "select-items-appropriately",
+     "name": "아이템을 적절히 고르는 문제",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dp-modeling-bank",
+       "Introduction"
+      ],
+      [
+       "intro-knapsack-mcq",
+       "Introduction"
+      ],
+      [
+       "challenge-knapsack-mcq-2",
+       "Problem"
+      ],
+      [
+       "test-dp-number-pass",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-string-matching",
+     "name": "String Matching",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-dp-lcs-2",
+       "Introduction"
+      ],
+      [
+       "challenge-minimum-edit-2",
+       "Problem"
+      ],
+      [
+       "test-minimum-edit",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-greedy-algorithm",
+     "name": "Greedy Algorithm",
+     "chapter": "DP",
+     "cards": [
+      [
+       "intro-fractional-knapsack",
+       "Introduction"
+      ],
+      [
+       "intro-scheduling-meeting-room",
+       "Introduction"
+      ],
+      [
+       "test-fractional-knapsack-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "graph-concept",
+     "name": "Graph 정의",
+     "chapter": "그래프 탐색",
+     "cards": [
+      [
+       "intro-graph-concept",
+       "Introduction"
+      ],
+      [
+       "challenge-graph-concept-2",
+       "Problem"
+      ],
+      [
+       "test-graph-concept-1",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "graph-representation",
+     "name": "Graph 구현",
+     "chapter": "그래프 탐색",
+     "cards": [
+      [
+       "intro-graph-using-adjust-graph",
+       "Introduction"
+      ],
+      [
+       "intro-graph-using-adjust-list",
+       "Introduction"
+      ],
+      [
+       "challenge-decode-adjust-array",
+       "Problem"
+      ],
+      [
+       "challenge-adjust-ds",
+       "Problem"
+      ],
+      [
+       "test-decode-adjust-list",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-dfs",
+     "name": "DFS",
+     "chapter": "그래프 탐색",
+     "cards": [
+      [
+       "intro-dfs-code",
+       "Introduction"
+      ],
+      [
+       "challenge-dfs-graph",
+       "Problem"
+      ],
+      [
+       "challenge-dfs-forest",
+       "Problem"
+      ],
+      [
+       "challenge-dfs-for-adjust-list",
+       "Problem"
+      ],
+      [
+       "test-dfs-using-adjust-array",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-bfs",
+     "name": "BFS 탐색",
+     "chapter": "그래프 탐색",
+     "cards": [
+      [
+       "intro-bfs-code",
+       "Introduction"
+      ],
+      [
+       "challenge-bfs-order",
+       "Problem"
+      ],
+      [
+       "challenge-bfs-forest",
+       "Problem"
+      ],
+      [
+       "challenge-bfs-for-adjust-array",
+       "Problem"
+      ],
+      [
+       "test-bfs-using-adjustg-list",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-equal-weighted-graph",
+     "name": "가중치가 동일한 그래프에서의 BFS",
+     "chapter": "그래프 탐색",
+     "cards": [
+      [
+       "intro-graph-shortest-path-1",
+       "Introduction"
+      ],
+      [
+       "test-graph-shortest-path-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-dijkstra",
+     "name": "Dijkstra",
+     "chapter": "그래프 알고리즘",
+     "cards": [
+      [
+       "intro-ga-shoterst-concept",
+       "Introduction"
+      ],
+      [
+       "intro-ga-dijkstra",
+       "Introduction"
+      ],
+      [
+       "challenge-ga-dijkstra-concept",
+       "Problem"
+      ],
+      [
+       "challenge-ga-dijkstra-wrong",
+       "Problem"
+      ],
+      [
+       "test-ga-dijkstra-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-floyd-warshall",
+     "name": "Floyd Warshall",
+     "chapter": "그래프 알고리즘",
+     "cards": [
+      [
+       "intro-ga-floyd",
+       "Introduction"
+      ],
+      [
+       "challenge-ga-floyd-dijkstra",
+       "Problem"
+      ],
+      [
+       "challenge-ga-floyd-point",
+       "Problem"
+      ],
+      [
+       "test-ga-floyd-practice",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-kruskal",
+     "name": "Kruskal",
+     "chapter": "그래프 알고리즘",
+     "cards": [
+      [
+       "intro-ga-mst",
+       "Introduction"
+      ],
+      [
+       "intro-ga-uf",
+       "Introduction"
+      ],
+      [
+       "intro-ga-uf-effective",
+       "Introduction"
+      ],
+      [
+       "intro-ga-kruskal",
+       "Introduction"
+      ],
+      [
+       "challenge-ga-uf-practice",
+       "Problem"
+      ],
+      [
+       "challenge-ga-uf-compare",
+       "Problem"
+      ],
+      [
+       "challenge-ga-kruskal-practice",
+       "Problem"
+      ],
+      [
+       "test-kruskal-concept",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-prim",
+     "name": "Prim",
+     "chapter": "그래프 알고리즘",
+     "cards": [
+      [
+       "intro-ga-prim",
+       "Introduction"
+      ],
+      [
+       "challenge-prim-concept",
+       "Problem"
+      ],
+      [
+       "challenge-ga-prim-practice",
+       "Problem"
+      ],
+      [
+       "challenge-ga-kruskal-prim",
+       "Problem"
+      ],
+      [
+       "challenge-ga-kruskal-prim-2",
+       "Problem"
+      ],
+      [
+       "test-ga-prim-order",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "concept-of-topological-sort",
+     "name": "Topological Sort",
+     "chapter": "그래프 알고리즘",
+     "cards": [
+      [
+       "intro-topological-sort-concept",
+       "Introduction"
+      ],
+      [
+       "challenge-topological-sort-with-dfs",
+       "Problem"
+      ],
+      [
+       "challenge-possibility-of-topological-sort",
+       "Problem"
+      ],
+      [
+       "challenge-first-topological-sort",
+       "Problem"
+      ],
+      [
+       "challenge-num-of-topological-sort",
+       "Problem"
+      ],
+      [
+       "test-topological-sort-with-in-degree",
+       "Test"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "alias": "intermediate-low",
+   "name": "알고리즘 입문",
+   "order": 4,
+   "lessons": [
+    {
+     "alias": "exhaustive-search",
+     "name": "격자 안에서 완전탐색",
+     "chapter": "Simulation",
+     "cards": [
+      [
+       "intro-best-place-of-33",
+       "Introduction"
+      ],
+      [
+       "challenge-number-of-happy-sequence",
+       "Problem"
+      ],
+      [
+       "challenge-tromino",
+       "Problem"
+      ],
+      [
+       "challenge-gold-mining",
+       "Problem"
+      ],
+      [
+       "challenge-slanted-rectangle",
+       "Problem"
+      ],
+      [
+       "challenge-non-overlapping-two-rectangles",
+       "Problem"
+      ],
+      [
+       "test-max-area-of-positive-rectangle",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "shift",
+     "name": "격자 안에서 밀고 당기기",
+     "chapter": "Simulation",
+     "cards": [
+      [
+       "intro-conveyor-belt",
+       "Introduction"
+      ],
+      [
+       "challenge-conveyor-belt-triangle",
+       "Problem"
+      ],
+      [
+       "challenge-The-1D-wind-blows",
+       "Problem"
+      ],
+      [
+       "challenge-The-2D-wind-blows",
+       "Problem"
+      ],
+      [
+       "challenge-rotate-slanted-rectangle",
+       "Problem"
+      ],
+      [
+       "test-shortest-run-length-encoding",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "bomb-and-drop",
+     "name": "격자 안에서 터지고 떨어지는 경우",
+     "chapter": "Simulation",
+     "cards": [
+      [
+       "intro-jenga-1d",
+       "Introduction"
+      ],
+      [
+       "challenge-cross-shape-bomb",
+       "Problem"
+      ],
+      [
+       "challenge-The-1D-bomb-game",
+       "Problem"
+      ],
+      [
+       "challenge-one-trial-of-2048-game",
+       "Problem"
+      ],
+      [
+       "challenge-cross-shape-continuous-bomb",
+       "Problem"
+      ],
+      [
+       "challenge-The-2D-bomb-game",
+       "Problem"
+      ],
+      [
+       "test-best-cross-shape-bomb",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "move-single-object-in-grid",
+     "name": "격자 안에서 단일 객체를 이동",
+     "chapter": "Simulation",
+     "cards": [
+      [
+       "intro-move-to-larger-adjacent-cell",
+       "Introduction"
+      ],
+      [
+       "challenge-falling-horizontal-block",
+       "Problem"
+      ],
+      [
+       "challenge-escape-maze-with-wall-following",
+       "Problem"
+      ],
+      [
+       "challenge-roll-a-dice",
+       "Problem"
+      ],
+      [
+       "challenge-big-explosion",
+       "Problem"
+      ],
+      [
+       "challenge-snake-loves-apples",
+       "Problem"
+      ],
+      [
+       "test-pinball-game",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "moving-multiple-objects-in-grid",
+     "name": "격자 안에서 여러 객체를 이동",
+     "chapter": "Simulation",
+     "cards": [
+      [
+       "intro-move-to-max-adjacent-cell-simultaneously",
+       "Introduction"
+      ],
+      [
+       "challenge-sequential-movement-of-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-collision-experiment-with-wall",
+       "Problem"
+      ],
+      [
+       "challenge-sequential-movement-of-stacked-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-marble-movement",
+       "Problem"
+      ],
+      [
+       "challenge-collision-experiment-without-wall",
+       "Problem"
+      ],
+      [
+       "test-merge-marbles",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "k-way-exhaustive-search-simple",
+     "name": "K개 중 하나를 N번 선택하기(Simple)",
+     "chapter": "Backtracking",
+     "cards": [
+      [
+       "intro-n-permutations-of-k-with-repetition",
+       "Introduction"
+      ],
+      [
+       "challenge-beautiful-number",
+       "Problem"
+      ],
+      [
+       "challenge-strong-explosion",
+       "Problem"
+      ],
+      [
+       "challenge-select-segments-without-overlap",
+       "Problem"
+      ],
+      [
+       "challenge-ladder-game",
+       "Problem"
+      ],
+      [
+       "challenge-two-thieves",
+       "Problem"
+      ],
+      [
+       "test-calculations-with-alphabet",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "k-way-exhaustive-search-conditional",
+     "name": "K개 중 하나를 N번 선택하기(Conditional)",
+     "chapter": "Backtracking",
+     "cards": [
+      [
+       "intro-n-permutations-of-k-with-repetition-under-constraint",
+       "Introduction"
+      ],
+      [
+       "challenge-yutnori-1d",
+       "Problem"
+      ],
+      [
+       "challenge-max-movements-with-direction",
+       "Problem"
+      ],
+      [
+       "challenge-find-min-of-possible-series",
+       "Problem"
+      ],
+      [
+       "test-min-num-of-jumps",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "choose-m-out-of-n",
+     "name": "N개 중에 M개 고르기(Simple)",
+     "chapter": "Backtracking",
+     "cards": [
+      [
+       "intro-n-choose-m",
+       "Introduction"
+      ],
+      [
+       "challenge-max-of-xor",
+       "Problem"
+      ],
+      [
+       "challenge-collect-coins-easy",
+       "Problem"
+      ],
+      [
+       "challenge-choose-n-out-of-2n-properly",
+       "Problem"
+      ],
+      [
+       "test-choose-m-out-of-n-points",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "permutation",
+     "name": "순열 만들기",
+     "chapter": "Backtracking",
+     "cards": [
+      [
+       "intro-n-permutation",
+       "Introduction"
+      ],
+      [
+       "challenge-backward-permutation",
+       "Problem"
+      ],
+      [
+       "challenge-max-sum-of-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-traveling-salesman-problem",
+       "Problem"
+      ],
+      [
+       "test-maximin-of-numbers",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "dfs",
+     "name": "DFS",
+     "chapter": "DFS",
+     "cards": [
+      [
+       "intro-graph-traversal",
+       "Introduction"
+      ],
+      [
+       "intro-determine-escapableness-with-2-ways",
+       "Introduction"
+      ],
+      [
+       "challenge-seperate-village",
+       "Problem"
+      ],
+      [
+       "challenge-comfort-zone",
+       "Problem"
+      ],
+      [
+       "test-puyo-puyo",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "bfs-traversal",
+     "name": "BFS 탐색",
+     "chapter": "BFS",
+     "cards": [
+      [
+       "intro-determine-escapableness-with-4-ways",
+       "Introduction"
+      ],
+      [
+       "challenge-places-can-go",
+       "Problem"
+      ],
+      [
+       "challenge-move-to-max-k-times",
+       "Problem"
+      ],
+      [
+       "challenge-clear-stones-well",
+       "Problem"
+      ],
+      [
+       "challenge-glacier",
+       "Problem"
+      ],
+      [
+       "test-we-are-the-one",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "equal-weighted-graph",
+     "name": "가중치가 동일한 그래프에서의 BFS",
+     "chapter": "BFS",
+     "cards": [
+      [
+       "intro-escape-with-min-distance",
+       "Introduction"
+      ],
+      [
+       "challenge-knight-movements",
+       "Problem"
+      ],
+      [
+       "challenge-stay-out-of-rain",
+       "Problem"
+      ],
+      [
+       "challenge-remove-k-walls",
+       "Problem"
+      ],
+      [
+       "challenge-make-one-using-four-operations",
+       "Problem"
+      ],
+      [
+       "test-oranges-have-gone-bad",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "dp-call-and-merge",
+     "name": "subproblem을 그대로 합치면 되는 DP",
+     "chapter": "DP I",
+     "cards": [
+      [
+       "intro-fibonacci-number",
+       "Introduction"
+      ],
+      [
+       "challenge-climbing-stairs",
+       "Problem"
+      ],
+      [
+       "challenge-rectangle-fill",
+       "Problem"
+      ],
+      [
+       "challenge-rectangle-fill-3",
+       "Problem"
+      ],
+      [
+       "challenge-number-of-unique-bst",
+       "Problem"
+      ],
+      [
+       "test-rectangle-fill-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "one-object-moving-in-grid",
+     "name": "격자 안에서 한 칸씩 전진하는 DP",
+     "chapter": "DP I",
+     "cards": [
+      [
+       "intro-maximum-sum-path-in-square",
+       "Introduction"
+      ],
+      [
+       "challenge-minimum-sum-path-in-square",
+       "Problem"
+      ],
+      [
+       "challenge-maximin-path-in-square",
+       "Problem"
+      ],
+      [
+       "challenge-lis-on-the-integer-grid",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-difference-on-the-integer-grid-2",
+       "Problem"
+      ],
+      [
+       "test-minimax-path-in-square",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "optional-selection-meeting-conditions",
+     "name": "조건에 맞게 선택적으로 전진하는 DP",
+     "chapter": "DP I",
+     "cards": [
+      [
+       "intro-longest-increasing-subsequence",
+       "Introduction"
+      ],
+      [
+       "challenge-longest-decreasing-subsequence",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-number-of-jumps",
+       "Problem"
+      ],
+      [
+       "challenge-longest-increasing-sequence-2d",
+       "Problem"
+      ],
+      [
+       "challenge-select-segments-without-overlap-2",
+       "Problem"
+      ],
+      [
+       "challenge-increasing-and-descreasing-subsequence",
+       "Problem"
+      ],
+      [
+       "test-being-rich-by-working-part-time",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "selecting-items-appropriately",
+     "name": "아이템을 적절히 고르는 문제",
+     "chapter": "DP I",
+     "cards": [
+      [
+       "intro-coin-change",
+       "Introduction"
+      ],
+      [
+       "intro-the-sum-of-the-subsequences-is-m",
+       "Introduction"
+      ],
+      [
+       "challenge-1-2-5-plus",
+       "Problem"
+      ],
+      [
+       "challenge-max-coin-change",
+       "Problem"
+      ],
+      [
+       "challenge-the-sum-of-the-subsequences",
+       "Problem"
+      ],
+      [
+       "challenge-knapsack",
+       "Problem"
+      ],
+      [
+       "challenge-rod-cutting",
+       "Problem"
+      ],
+      [
+       "challenge-knapsack-2",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-diff-partition",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-sum-partition",
+       "Problem"
+      ],
+      [
+       "challenge-gain-exp-quickly",
+       "Problem"
+      ],
+      [
+       "test-equal-partition",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "define-state-to-apply-condition",
+     "name": "원하는 State를 정의하여 한 칸씩 나아가는 DP",
+     "chapter": "DP II",
+     "cards": [
+      [
+       "intro-max-of-partial-sum",
+       "Introduction"
+      ],
+      [
+       "intro-climbing-stairs-2",
+       "Introduction"
+      ],
+      [
+       "challenge-number-war",
+       "Problem"
+      ],
+      [
+       "challenge-secret-of-ancient-treasure-map",
+       "Problem"
+      ],
+      [
+       "challenge-choose-one-of-two-points",
+       "Problem"
+      ],
+      [
+       "challenge-right-equality",
+       "Problem"
+      ],
+      [
+       "challenge-surviving-in-a-game-studio",
+       "Problem"
+      ],
+      [
+       "challenge-select-m-sections",
+       "Problem"
+      ],
+      [
+       "challenge-369-game-challenge",
+       "Problem"
+      ],
+      [
+       "test-soccer-and-baseball",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "linear-shape",
+     "name": "연속적이지만 직전 상황에 영향을 받는 DP",
+     "chapter": "DP II",
+     "cards": [
+      [
+       "intro-select-proper-clothes",
+       "Introduction"
+      ],
+      [
+       "challenge-stair-number",
+       "Problem"
+      ],
+      [
+       "challenge-explore-temple",
+       "Problem"
+      ],
+      [
+       "challenge-explore-temple-2",
+       "Problem"
+      ],
+      [
+       "challenge-collect-crystals",
+       "Problem"
+      ],
+      [
+       "challenge-change-number-properly",
+       "Problem"
+      ],
+      [
+       "challenge-rotation-magic-circle",
+       "Problem"
+      ],
+      [
+       "challenge-number-puzzle",
+       "Problem"
+      ],
+      [
+       "test-explore-temple-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "string-matching",
+     "name": "String Matching",
+     "chapter": "DP II",
+     "cards": [
+      [
+       "intro-longest-common-sequence",
+       "Introduction"
+      ],
+      [
+       "challenge-edit-distance",
+       "Problem"
+      ],
+      [
+       "challenge-edit-distance-3",
+       "Problem"
+      ],
+      [
+       "challenge-pattern-matching",
+       "Problem"
+      ],
+      [
+       "challenge-longest-common-sequence-2",
+       "Problem"
+      ],
+      [
+       "challenge-longest-common-sequence-3",
+       "Problem"
+      ],
+      [
+       "test-shortest-common-supersubsequence",
+       "Test"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "alias": "intermediate-mid",
+   "name": "알고리즘 기본",
+   "order": 5,
+   "lessons": [
+    {
+     "alias": "hashmap",
+     "name": "HashMap",
+     "chapter": "중급 자료구조",
+     "cards": [
+      [
+       "intro-hashmap-basic",
+       "Introduction"
+      ],
+      [
+       "intro-number-frequency",
+       "Introduction"
+      ],
+      [
+       "intro-most-frequent-data",
+       "Introduction"
+      ],
+      [
+       "challenge-corresponding-numbers-and-characters",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-two-num",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-three-num",
+       "Problem"
+      ],
+      [
+       "challenge-top-k-frequent-elements",
+       "Problem"
+      ],
+      [
+       "challenge-the-sum-of-the-elements-is-0",
+       "Problem"
+      ],
+      [
+       "challenge-group-same-word",
+       "Problem"
+      ],
+      [
+       "challenge-special-character",
+       "Problem"
+      ],
+      [
+       "test-lowest-points",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "treemap",
+     "name": "TreeMap",
+     "chapter": "중급 자료구조",
+     "cards": [
+      [
+       "intro-treemap-basic",
+       "Introduction"
+      ],
+      [
+       "intro-find-proportions",
+       "Introduction"
+      ],
+      [
+       "challenge-first-appearing-position",
+       "Problem"
+      ],
+      [
+       "test-word-list",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "hashset",
+     "name": "HashSet",
+     "chapter": "중급 자료구조",
+     "cards": [
+      [
+       "intro-hashset-basic",
+       "Introduction"
+      ],
+      [
+       "intro-data-comparison",
+       "Introduction"
+      ],
+      [
+       "challenge-distinct-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-find-an-integer",
+       "Problem"
+      ],
+      [
+       "challenge-changing-seats-2",
+       "Problem"
+      ],
+      [
+       "challenge-c-tag",
+       "Problem"
+      ],
+      [
+       "challenge-invitation-and-number-tag",
+       "Problem"
+      ],
+      [
+       "test-symmetric-difference-set",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "treeset",
+     "name": "TreeSet",
+     "chapter": "중급 자료구조",
+     "cards": [
+      [
+       "intro-treeset-basic",
+       "Introduction"
+      ],
+      [
+       "intro-Integer-command",
+       "Introduction"
+      ],
+      [
+       "intro-find-number-fast-2",
+       "Introduction"
+      ],
+      [
+       "intro-frendly-point",
+       "Introduction"
+      ],
+      [
+       "intro-find-maximum-number",
+       "Introduction"
+      ],
+      [
+       "intro-nearest-number",
+       "Introduction"
+      ],
+      [
+       "challenge-top-k-elements",
+       "Problem"
+      ],
+      [
+       "challenge-take-place",
+       "Problem"
+      ],
+      [
+       "challenge-the-number-with-the-smallest-difference",
+       "Problem"
+      ],
+      [
+       "challenge-remove-point",
+       "Problem"
+      ],
+      [
+       "challenge-problem-recommendation-system-1",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-consecutive-number",
+       "Problem"
+      ],
+      [
+       "challenge-horizontal-track-with-infinite-length",
+       "Problem"
+      ],
+      [
+       "test-small-but-big-number",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "priority-queue",
+     "name": "Priority Queue",
+     "chapter": "중급 자료구조",
+     "cards": [
+      [
+       "intro-process-numeric-commands-6",
+       "Introduction"
+      ],
+      [
+       "intro-keep-picking-the-big-number",
+       "Introduction"
+      ],
+      [
+       "intro-min-integer-output",
+       "Introduction"
+      ],
+      [
+       "intro-nearest-point",
+       "Introduction"
+      ],
+      [
+       "challenge-array-extraction",
+       "Problem"
+      ],
+      [
+       "challenge-last-remaining-number",
+       "Problem"
+      ],
+      [
+       "challenge-delete-it-from-the-beginning-2",
+       "Problem"
+      ],
+      [
+       "challenge-median",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-kth-smallest-pair",
+       "Problem"
+      ],
+      [
+       "challenge-array-extraction-2",
+       "Problem"
+      ],
+      [
+       "challenge-admission-to-the-garden-is-on-a-first-come-first-served-basis",
+       "Problem"
+      ],
+      [
+       "test-top-3-smallest-number",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "doubly-linked-list",
+     "name": "Doubly-LinkedList",
+     "chapter": "중급 자료구조",
+     "cards": [
+      [
+       "intro-linked-list1",
+       "Introduction"
+      ],
+      [
+       "intro-linked-list2",
+       "Introduction"
+      ],
+      [
+       "intro-switch-position-in-array",
+       "Introduction"
+      ],
+      [
+       "intro-bookshelf-clean",
+       "Introduction"
+      ],
+      [
+       "challenge-teddys-travel-planner",
+       "Problem"
+      ],
+      [
+       "challenge-knights-commencement",
+       "Problem"
+      ],
+      [
+       "challenge-codetree-kindergarden",
+       "Problem"
+      ],
+      [
+       "challenge-cut-in-line",
+       "Problem"
+      ],
+      [
+       "challenge-circle-dance",
+       "Problem"
+      ],
+      [
+       "test-cut-in-line2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "prefix-sum",
+     "name": "Prefix Sum",
+     "chapter": "Shorten time Technique",
+     "cards": [
+      [
+       "intro-sum-of-n-integers-2",
+       "Introduction"
+      ],
+      [
+       "intro-sum-of-n-integers-3",
+       "Introduction"
+      ],
+      [
+       "challenge-the-sum-of-the-subsequences-is-k",
+       "Problem"
+      ],
+      [
+       "challenge-k-numbers-in-a-row",
+       "Problem"
+      ],
+      [
+       "challenge-the-number-of-points-within-the-range-2",
+       "Problem"
+      ],
+      [
+       "challenge-max-rect-sum-in-grid",
+       "Problem"
+      ],
+      [
+       "challenge-the-number-of-characters-in-the-interval",
+       "Problem"
+      ],
+      [
+       "challenge-move-to-numbers-with-star",
+       "Problem"
+      ],
+      [
+       "test-belonging-to-a-rock",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "grid-compression",
+     "name": "Grid Compression",
+     "chapter": "Shorten time Technique",
+     "cards": [
+      [
+       "intro-count-number-of-points-3",
+       "Introduction"
+      ],
+      [
+       "challenge-count-number-of-points-2",
+       "Problem"
+      ],
+      [
+       "test-count-number-of-points",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "lr-technique",
+     "name": "LR Technique",
+     "chapter": "Shorten time Technique",
+     "cards": [
+      [
+       "intro-taking-a-taxi-in-the-middle-of-the-marathon",
+       "Introduction"
+      ],
+      [
+       "challenge-rock-paper-scissors-to-see-the-future",
+       "Problem"
+      ],
+      [
+       "challenge-three-non-adjacent-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-c-o-w",
+       "Problem"
+      ],
+      [
+       "challenge-line-segments-that-do-not-overlap",
+       "Problem"
+      ],
+      [
+       "challenge-divide-by-equal-sum-of-intervals",
+       "Problem"
+      ],
+      [
+       "test-max-num-outside-of-interval",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "plus-one-minus-one-technique",
+     "name": "+1-1 technique",
+     "chapter": "Shorten time Technique",
+     "cards": [
+      [
+       "intro-section-with-maximum-overlap",
+       "Introduction"
+      ],
+      [
+       "intro-number-of-distinct-segments",
+       "Introduction"
+      ],
+      [
+       "challenge-section-with-maximum-overlap-2",
+       "Problem"
+      ],
+      [
+       "challenge-overlapping-lines",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-interval-sizes",
+       "Problem"
+      ],
+      [
+       "challenge-size-of-largest-interval",
+       "Problem"
+      ],
+      [
+       "challenge-computer-hours",
+       "Problem"
+      ],
+      [
+       "challenge-looking-at-the-line-segment-2",
+       "Problem"
+      ],
+      [
+       "challenge-remove-the-line-segment-for-the-maximum-length",
+       "Problem"
+      ],
+      [
+       "test-reserve-hotel",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "preprocessing",
+     "name": "전처리",
+     "chapter": "Shorten time Technique",
+     "cards": [
+      [
+       "intro-pair-parentheses",
+       "Introduction"
+      ],
+      [
+       "challenge-strange-bomb",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-energy-cost",
+       "Problem"
+      ],
+      [
+       "challenge-divide-evenly-2",
+       "Problem"
+      ],
+      [
+       "test-the-sum-of-the-numbers-is-a-multiple-of-7",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "two-pointer",
+     "name": "Two Pointer",
+     "chapter": "Shorten time Technique",
+     "cards": [
+      [
+       "intro-shortest-subtotal",
+       "Introduction"
+      ],
+      [
+       "intro-max-interval-without-overlapping-numbers",
+       "Introduction"
+      ],
+      [
+       "intro-determine-subsequence",
+       "Introduction"
+      ],
+      [
+       "challenge-sum-of-consecutive-n-integers",
+       "Problem"
+      ],
+      [
+       "challenge-sum-of-two-integers-2",
+       "Problem"
+      ],
+      [
+       "challenge-candy-in-the-basket",
+       "Problem"
+      ],
+      [
+       "challenge-sum-closest-to-zero",
+       "Problem"
+      ],
+      [
+       "challenge-the-minimum-difference-in-coordinate-range",
+       "Problem"
+      ],
+      [
+       "challenge-a-group-of-numbers-tied-to-specific-conditions",
+       "Problem"
+      ],
+      [
+       "challenge-longest-not-duplicated-substring",
+       "Problem"
+      ],
+      [
+       "challenge-k-distinct-characters",
+       "Problem"
+      ],
+      [
+       "challenge-subsequences-with-few-overlapping-elements",
+       "Problem"
+      ],
+      [
+       "challenge-both-exist-section",
+       "Problem"
+      ],
+      [
+       "challenge-fire-suppression",
+       "Problem"
+      ],
+      [
+       "challenge-determine-possibility-of-subsequence",
+       "Problem"
+      ],
+      [
+       "test-subsequence-with-k-or-more-1s",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "binary-search",
+     "name": "이진탐색",
+     "chapter": "Parametric Search",
+     "cards": [
+      [
+       "intro-find-number-fast",
+       "Introduction"
+      ],
+      [
+       "intro-number-of-integers",
+       "Introduction"
+      ],
+      [
+       "challenge-first-appear-number",
+       "Problem"
+      ],
+      [
+       "challenge-point-on-the-line-segment",
+       "Problem"
+      ],
+      [
+       "test-play-number-game-with-computer-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "parametric-search",
+     "name": "Parametric Search",
+     "chapter": "Parametric Search",
+     "cards": [
+      [
+       "intro-sum-of-n-natural-numbers",
+       "Introduction"
+      ],
+      [
+       "intro-distributing-integers",
+       "Introduction"
+      ],
+      [
+       "challenge-three-five-moo",
+       "Problem"
+      ],
+      [
+       "challenge-ascending-order-of-two-dimensional-array",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-distance-point",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-transit-time",
+       "Problem"
+      ],
+      [
+       "challenge-two-points-of-the-line-that-dont-overlap",
+       "Problem"
+      ],
+      [
+       "challenge-maximize-dist-of-nearest-points",
+       "Problem"
+      ],
+      [
+       "challenge-n-people-with-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-painting-the-grid-2",
+       "Problem"
+      ],
+      [
+       "challenge-move-to-the-colored-space-only-2",
+       "Problem"
+      ],
+      [
+       "challenge-drop-the-bomb",
+       "Problem"
+      ],
+      [
+       "challenge-waiting-for-the-bus",
+       "Problem"
+      ],
+      [
+       "challenge-meet-now-right-now",
+       "Problem"
+      ],
+      [
+       "challenge-find-the-number-of-partial-strings",
+       "Problem"
+      ],
+      [
+       "challenge-minimize-the-height-difference",
+       "Problem"
+      ],
+      [
+       "challenge-note-and-sticky-note",
+       "Problem"
+      ],
+      [
+       "test-use-the-swimming-pool-efficiently",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "greedy-algorithm",
+     "name": "Greedy Algorithm",
+     "chapter": "Greedy",
+     "cards": [
+      [
+       "intro-add-coins",
+       "Introduction"
+      ],
+      [
+       "intro-max-of-partial-sum-2",
+       "Introduction"
+      ],
+      [
+       "intro-implement-fractional-knapsack",
+       "Introduction"
+      ],
+      [
+       "intro-merge-numbers",
+       "Introduction"
+      ],
+      [
+       "intro-implement-scheduling-meeting-room",
+       "Introduction"
+      ],
+      [
+       "intro-make-biggest-num",
+       "Introduction"
+      ],
+      [
+       "challenge-fill-in-number",
+       "Problem"
+      ],
+      [
+       "challenge-max-profit-of-single-car-2",
+       "Problem"
+      ],
+      [
+       "challenge-a-high-number-of-cards-wins",
+       "Problem"
+      ],
+      [
+       "challenge-the-bomb-dismantling",
+       "Problem"
+      ],
+      [
+       "challenge-m2-pairs-of-natural-numbers",
+       "Problem"
+      ],
+      [
+       "challenge-red-stone-and-black-stone-2",
+       "Problem"
+      ],
+      [
+       "challenge-maximize-the-number-of-parenthesis-matches",
+       "Problem"
+      ],
+      [
+       "test-do-not-overlap-the-meeting-room",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "flippable-problem",
+     "name": "상태 반전이 가능한 문제",
+     "chapter": "Greedy",
+     "cards": [
+      [
+       "intro-reversing-g-and-h",
+       "Introduction"
+      ],
+      [
+       "intro-flip-left-and-right",
+       "Introduction"
+      ],
+      [
+       "intro-reversing-g-and-h-2",
+       "Introduction"
+      ],
+      [
+       "challenge-flip-up-down-left-right",
+       "Problem"
+      ],
+      [
+       "challenge-grid-consisting-of-0-and-1",
+       "Problem"
+      ],
+      [
+       "test-reversing-g-and-h-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "dijkstra",
+     "name": "Dijkstra",
+     "chapter": "Shortest Path",
+     "cards": [
+      [
+       "intro-shortest-path-to-each-vertex-3",
+       "Introduction"
+      ],
+      [
+       "intro-shortest-path-to-each-vertex",
+       "Introduction"
+      ],
+      [
+       "intro-longest-student-2",
+       "Introduction"
+      ],
+      [
+       "intro-shortest-distance-9",
+       "Introduction"
+      ],
+      [
+       "intro-shortest-distance-11",
+       "Introduction"
+      ],
+      [
+       "challenge-shortest-distance-3",
+       "Problem"
+      ],
+      [
+       "challenge-thousand-stops",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-of-nearest-distance",
+       "Problem"
+      ],
+      [
+       "challenge-move-to-another-parenthesis",
+       "Problem"
+      ],
+      [
+       "challenge-dot-to-the-dot",
+       "Problem"
+      ],
+      [
+       "challenge-back-to-the-black-dot-2",
+       "Problem"
+      ],
+      [
+       "challenge-longest-round-trip",
+       "Problem"
+      ],
+      [
+       "challenge-double-the-length-of-the-edge",
+       "Problem"
+      ],
+      [
+       "challenge-eliminate-edges",
+       "Problem"
+      ],
+      [
+       "challenge-move-with-different-path",
+       "Problem"
+      ],
+      [
+       "challenge-same-road-different-distance",
+       "Problem"
+      ],
+      [
+       "test-longest-student",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "floyd-warshall",
+     "name": "Floyd Warshall",
+     "chapter": "Shortest Path",
+     "cards": [
+      [
+       "intro-shortest-path-to-each-vertex-2",
+       "Introduction"
+      ],
+      [
+       "intro-edge-given-by-matrix",
+       "Introduction"
+      ],
+      [
+       "challenge-shortest-distance",
+       "Problem"
+      ],
+      [
+       "challenge-pair-of-points-that-can-be-moved",
+       "Problem"
+      ],
+      [
+       "challenge-cheapest-meeting",
+       "Problem"
+      ],
+      [
+       "challenge-size-comparison",
+       "Problem"
+      ],
+      [
+       "test-shortest-round-trip",
+       "Test"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "alias": "intermediate-high",
+   "name": "알고리즘 실전",
+   "order": 6,
+   "lessons": [
+    {
+     "alias": "tree",
+     "name": "트리",
+     "chapter": "Tree",
+     "cards": [
+      [
+       "intro-parent-node-of-the-tree",
+       "Introduction"
+      ],
+      [
+       "intro-diameter-of-tree",
+       "Introduction"
+      ],
+      [
+       "challenge-remove-tree-node",
+       "Problem"
+      ],
+      [
+       "challenge-tree-identification",
+       "Problem"
+      ],
+      [
+       "challenge-node-distance",
+       "Problem"
+      ],
+      [
+       "challenge-identifying-the-tree",
+       "Problem"
+      ],
+      [
+       "challenge-beard-tree",
+       "Problem"
+      ],
+      [
+       "challenge-length-of-tree-trunk",
+       "Problem"
+      ],
+      [
+       "challenge-tree-optimal-node",
+       "Problem"
+      ],
+      [
+       "challenge-touring-the-line",
+       "Problem"
+      ],
+      [
+       "challenge-diameter-of-tree-3",
+       "Problem"
+      ],
+      [
+       "challenge-modify-tree",
+       "Problem"
+      ],
+      [
+       "test-graphs-and-trees",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "tree-traversal",
+     "name": "이진 트리와 탐색",
+     "chapter": "Tree",
+     "cards": [
+      [
+       "intro-the-tree-traversal",
+       "Introduction"
+      ],
+      [
+       "challenge-tree-inorder",
+       "Problem"
+      ],
+      [
+       "challenge-a-way-through-the-tree",
+       "Problem"
+      ],
+      [
+       "challenge-drop-a-ball-in-a-tree",
+       "Problem"
+      ],
+      [
+       "challenge-change-tree-traversal-2",
+       "Problem"
+      ],
+      [
+       "challenge-change-tree-traversal-3",
+       "Problem"
+      ],
+      [
+       "test-change-tree-traversal",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "tree-dp",
+     "name": "Tree DP",
+     "chapter": "Tree",
+     "cards": [
+      [
+       "intro-calculating-an-integer-for-a-node",
+       "Introduction"
+      ],
+      [
+       "intro-node-best-count",
+       "Introduction"
+      ],
+      [
+       "challenge-subtree-of-tree",
+       "Problem"
+      ],
+      [
+       "challenge-tree-forwarding",
+       "Problem"
+      ],
+      [
+       "challenge-median-node",
+       "Problem"
+      ],
+      [
+       "challenge-node-traversal",
+       "Problem"
+      ],
+      [
+       "challenge-value-of-node",
+       "Problem"
+      ],
+      [
+       "challenge-adjacent-node",
+       "Problem"
+      ],
+      [
+       "challenge-binary-tree-maximum-path-sum",
+       "Problem"
+      ],
+      [
+       "challenge-adjacent-node-2",
+       "Problem"
+      ],
+      [
+       "challenge-coloring-not-adjacently-2",
+       "Problem"
+      ],
+      [
+       "challenge-node-best-count-3",
+       "Problem"
+      ],
+      [
+       "challenge-coloring-not-adjacently",
+       "Problem"
+      ],
+      [
+       "test-node-best-count-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "lowest-common-ancestor",
+     "name": "LCA",
+     "chapter": "Tree",
+     "cards": [
+      [
+       "intro-adjacent-common-ancestor-nodes",
+       "Introduction"
+      ],
+      [
+       "intro-common-ancestor-of-node-2",
+       "Introduction"
+      ],
+      [
+       "challenge-common-ancestor-of-node-4",
+       "Problem"
+      ],
+      [
+       "challenge-common-ancestor-of-node-3",
+       "Problem"
+      ],
+      [
+       "challenge-tree-path-length",
+       "Problem"
+      ],
+      [
+       "challenge-tree-path-length-2",
+       "Problem"
+      ],
+      [
+       "test-count-colored-node",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "disjoint-set",
+     "name": "Disjoint Set (Union Find)",
+     "chapter": "MST",
+     "cards": [
+      [
+       "intro-elements-of-a-set",
+       "Introduction"
+      ],
+      [
+       "challenge-determining-the-suitability-of-the-route-2",
+       "Problem"
+      ],
+      [
+       "challenge-connected-vertex",
+       "Problem"
+      ],
+      [
+       "challenge-connect-vertices",
+       "Problem"
+      ],
+      [
+       "challenge-cycle-of-graph",
+       "Problem"
+      ],
+      [
+       "challenge-tree-completion",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-edge-size",
+       "Problem"
+      ],
+      [
+       "challenge-do-not-connect-with-a-specific-node",
+       "Problem"
+      ],
+      [
+       "challenge-connect-with-the-most-vertices",
+       "Problem"
+      ],
+      [
+       "challenge-integer-in-the-cell",
+       "Problem"
+      ],
+      [
+       "challenge-red-team-and-white-team",
+       "Problem"
+      ],
+      [
+       "challenge-can",
+       "Problem"
+      ],
+      [
+       "test-connected-vertex-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "kruskal",
+     "name": "Kruskal",
+     "chapter": "MST",
+     "cards": [
+      [
+       "intro-minimum-spanning-tree",
+       "Introduction"
+      ],
+      [
+       "challenge-minimum-spanning-tree-4",
+       "Problem"
+      ],
+      [
+       "challenge-connections-on-the-grid",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-distance",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-spanning-tree-split",
+       "Problem"
+      ],
+      [
+       "challenge-difference-between-max-and-min",
+       "Problem"
+      ],
+      [
+       "challenge-explore-mars",
+       "Problem"
+      ],
+      [
+       "challenge-point-on-a-three-dimensional-plane",
+       "Problem"
+      ],
+      [
+       "test-delete-edge",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "prim",
+     "name": "Prim",
+     "chapter": "MST",
+     "cards": [
+      [
+       "intro-minimum-spanning-tree-8",
+       "Introduction"
+      ],
+      [
+       "intro-minimum-spanning-tree-9",
+       "Introduction"
+      ],
+      [
+       "challenge-place-object",
+       "Problem"
+      ],
+      [
+       "challenge-connecting-cities",
+       "Problem"
+      ],
+      [
+       "challenge-restore-tree",
+       "Problem"
+      ],
+      [
+       "challenge-circular-movement",
+       "Problem"
+      ],
+      [
+       "challenge-connect-to-colored-vertices",
+       "Problem"
+      ],
+      [
+       "challenge-minimum-spanning-tree-7",
+       "Problem"
+      ],
+      [
+       "test-growing-edge-value",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "topological-sort",
+     "name": "Topological Sort",
+     "chapter": "위상정렬",
+     "cards": [
+      [
+       "intro-height-of-friends",
+       "Introduction"
+      ],
+      [
+       "intro-height-of-friends-2",
+       "Introduction"
+      ],
+      [
+       "intro-size-comparison-3",
+       "Introduction"
+      ],
+      [
+       "challenge-nodes-guessing",
+       "Problem"
+      ],
+      [
+       "challenge-assembly-2",
+       "Problem"
+      ],
+      [
+       "challenge-detect-cycle",
+       "Problem"
+      ],
+      [
+       "challenge-remove-cycle",
+       "Problem"
+      ],
+      [
+       "challenge-height-of-friends-4",
+       "Problem"
+      ],
+      [
+       "challenge-new-alphabet",
+       "Problem"
+      ],
+      [
+       "challenge-numbers-satisfying-specific-conditions",
+       "Problem"
+      ],
+      [
+       "challenge-renumbering-process",
+       "Problem"
+      ],
+      [
+       "test-height-of-friends-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "graph-dp",
+     "name": "Graph DP",
+     "chapter": "위상정렬",
+     "cards": [
+      [
+       "intro-predecessor",
+       "Introduction"
+      ],
+      [
+       "challenge-possible-path-of-travel",
+       "Problem"
+      ],
+      [
+       "challenge-geological-research",
+       "Problem"
+      ],
+      [
+       "challenge-assembly",
+       "Problem"
+      ],
+      [
+       "challenge-maximum-visitable-route",
+       "Problem"
+      ],
+      [
+       "challenge-number-of-moving-cases",
+       "Problem"
+      ],
+      [
+       "test-priority-construction",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "manachers-algorithm",
+     "name": "Manacher's algorithm",
+     "chapter": "String",
+     "cards": [
+      [
+       "intro-longest-palindrome-2",
+       "Introduction"
+      ],
+      [
+       "challenge-counting-palindrome-substrings",
+       "Problem"
+      ],
+      [
+       "challenge-palindrome-and-query",
+       "Problem"
+      ],
+      [
+       "test-longest-palindrome-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "string-hashing",
+     "name": "String Hashing",
+     "chapter": "String",
+     "cards": [
+      [
+       "intro-find-the-location-of-a-substring",
+       "Introduction"
+      ],
+      [
+       "challenge-most-common-substring",
+       "Problem"
+      ],
+      [
+       "challenge-graph-and-string",
+       "Problem"
+      ],
+      [
+       "challenge-repeated-substrings-found",
+       "Problem"
+      ],
+      [
+       "test-distinct-substrings-count",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "kmp-algorithm",
+     "name": "KMP",
+     "chapter": "String",
+     "cards": [
+      [
+       "intro-substring-occurrence-count",
+       "Introduction"
+      ],
+      [
+       "challenge-substring-occurrence-count-2",
+       "Problem"
+      ],
+      [
+       "challenge-string-match-count",
+       "Problem"
+      ],
+      [
+       "challenge-shortest-pattern-string",
+       "Problem"
+      ],
+      [
+       "challenge-longest-prefix",
+       "Problem"
+      ],
+      [
+       "challenge-padding-a-string",
+       "Problem"
+      ],
+      [
+       "challenge-keep-removing-string-2",
+       "Problem"
+      ],
+      [
+       "test-substring-occurrence-count-3",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "trie",
+     "name": "Trie",
+     "chapter": "String",
+     "cards": [
+      [
+       "intro-duplicate-sequence",
+       "Introduction"
+      ],
+      [
+       "challenge-figure-out-the-tree-2",
+       "Problem"
+      ],
+      [
+       "challenge-search-terms-and-prefixes",
+       "Problem"
+      ],
+      [
+       "challenge-prefix-and-score",
+       "Problem"
+      ],
+      [
+       "challenge-prefix-and-autocomplete",
+       "Problem"
+      ],
+      [
+       "challenge-figure-out-the-tree",
+       "Problem"
+      ],
+      [
+       "challenge-number-of-ways-to-fill-a-string",
+       "Problem"
+      ],
+      [
+       "challenge-max-out-of-xor",
+       "Problem"
+      ],
+      [
+       "challenge-a-palindrome-made-by-joining-two",
+       "Problem"
+      ],
+      [
+       "test-board-and-words",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "bitonic-cycle",
+     "name": "Bitonic Cycle",
+     "chapter": "Advanced DP",
+     "cards": [
+      [
+       "intro-bitonic-cycle",
+       "Introduction"
+      ],
+      [
+       "challenge-two-people-and-cards",
+       "Problem"
+      ],
+      [
+       "challenge-two-people-and-cards-2",
+       "Problem"
+      ],
+      [
+       "challenge-two-people-and-cards-3",
+       "Problem"
+      ],
+      [
+       "challenge-increasing-and-descreasing-sequence",
+       "Problem"
+      ],
+      [
+       "test-bitonic-cycle-2",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "dp-scale-small-to-large-intervals",
+     "name": "작은 구간에서 큰 구간으로 확장되는 DP",
+     "chapter": "Advanced DP",
+     "cards": [
+      [
+       "intro-Combine-2-3",
+       "Introduction"
+      ],
+      [
+       "challenge-longest-palindrome-4",
+       "Problem"
+      ],
+      [
+       "challenge-palindrome-and-remove",
+       "Problem"
+      ],
+      [
+       "challenge-combine-3",
+       "Problem"
+      ],
+      [
+       "challenge-valid-string",
+       "Problem"
+      ],
+      [
+       "challenge-two-adjacent-numbers-and-difference",
+       "Problem"
+      ],
+      [
+       "test-two-adjacent-numbers-and-sum",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "bitmask",
+     "name": "Bitmask",
+     "chapter": "Advanced DP",
+     "cards": [
+      [
+       "intro-bit-calculation",
+       "Introduction"
+      ],
+      [
+       "challenge-three-numbers-with-no-overlapping-bits",
+       "Problem"
+      ],
+      [
+       "challenge-filp-up-down-left-right-2",
+       "Problem"
+      ],
+      [
+       "test-number-of-non-overlapping-pairs",
+       "Test"
+      ]
+     ]
+    },
+    {
+     "alias": "bitmask-dp",
+     "name": "Bitmask DP",
+     "chapter": "Advanced DP",
+     "cards": [
+      [
+       "intro-rectangle-fill-4",
+       "Introduction"
+      ],
+      [
+       "intro-traveling-salesman-problem-2",
+       "Introduction"
+      ],
+      [
+       "challenge-rectangle-fill-5",
+       "Problem"
+      ],
+      [
+       "challenge-maximize-n-sums",
+       "Problem"
+      ],
+      [
+       "challenge-place-object-2",
+       "Problem"
+      ],
+      [
+       "challenge-the-number-of-occurrences-of-all-digits",
+       "Problem"
+      ],
+      [
+       "challenge-taveling-salesman-problem-3",
+       "Problem"
+      ],
+      [
+       "challenge-pick-adjacent-cells",
+       "Problem"
+      ],
+      [
+       "challenge-pick-adjacent-cells-2",
+       "Problem"
+      ],
+      [
+       "challenge-split-into-k-groups",
+       "Problem"
+      ],
+      [
+       "challenge-pick-adjacent-cells-3",
+       "Problem"
+      ],
+      [
+       "challenge-rectangle-fill-6",
+       "Problem"
+      ],
+      [
+       "challenge-selection-of-representatives",
+       "Problem"
+      ],
+      [
+       "test-longest-relay",
+       "Test"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
