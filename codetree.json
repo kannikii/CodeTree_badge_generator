@@ -1,0 +1,179 @@
+{
+ "schema": 2,
+ "date": "2026-11-28",
+ "timezone": "Asia/Seoul",
+ "source": {
+  "repo": "kannikii/PS",
+  "curriculum": "live"
+ },
+ "overall": {
+  "passed": 234,
+  "total": 1334,
+  "pct": 17.5
+ },
+ "display": {
+  "trail": 3,
+  "alias": "novice-high",
+  "level": "Novice High",
+  "name": "자료구조 알고리즘",
+  "mode": "auto",
+  "passed": 130,
+  "total": 242,
+  "pct": 53.7,
+  "is_current": false,
+  "lessons": "##############Oo#ooOOOO.######O..######....O........"
+ },
+ "trails": [
+  {
+   "trail": 1,
+   "alias": "novice-low",
+   "level": "Novice Low",
+   "name": "프로그래밍 기초",
+   "passed": 39,
+   "total": 396,
+   "pct": 9.8,
+   "lessons": 87
+  },
+  {
+   "trail": 2,
+   "alias": "novice-mid",
+   "level": "Novice Mid",
+   "name": "프로그래밍 연습",
+   "passed": 49,
+   "total": 241,
+   "pct": 20.3,
+   "lessons": 29
+  },
+  {
+   "trail": 3,
+   "alias": "novice-high",
+   "level": "Novice High",
+   "name": "자료구조 알고리즘",
+   "passed": 130,
+   "total": 242,
+   "pct": 53.7,
+   "lessons": 52
+  },
+  {
+   "trail": 4,
+   "alias": "intermediate-low",
+   "level": "Intermediate Low",
+   "name": "알고리즘 입문",
+   "passed": 16,
+   "total": 130,
+   "pct": 12.3,
+   "lessons": 19
+  },
+  {
+   "trail": 5,
+   "alias": "intermediate-mid",
+   "level": "Intermediate Mid",
+   "name": "알고리즘 기본",
+   "passed": 0,
+   "total": 176,
+   "pct": 0.0,
+   "lessons": 18
+  },
+  {
+   "trail": 6,
+   "alias": "intermediate-high",
+   "level": "Intermediate High",
+   "name": "알고리즘 실전",
+   "passed": 0,
+   "total": 149,
+   "pct": 0.0,
+   "lessons": 17
+  }
+ ],
+ "streak": {
+  "current": 45,
+  "best": 45,
+  "total": 75,
+  "first": "2026-07-19",
+  "last": "2026-11-28",
+  "recent_28": "1111111111111111111111111111"
+ },
+ "recent": {
+  "title": "실수 받아 그대로 출력",
+  "alias": "intro-enter-real-value-and-print",
+  "trail": 1,
+  "lesson": "실수 입력",
+  "date": "2026-11-28"
+ },
+ "xp": {
+  "goal": 50,
+  "today": 10,
+  "total": 3850,
+  "goal_days": 3,
+  "best": 90,
+  "days": [
+   {
+    "date": "2026-11-15",
+    "xp": 10
+   },
+   {
+    "date": "2026-11-16",
+    "xp": 10
+   },
+   {
+    "date": "2026-11-17",
+    "xp": 10
+   },
+   {
+    "date": "2026-11-18",
+    "xp": 80
+   },
+   {
+    "date": "2026-11-19",
+    "xp": 90
+   },
+   {
+    "date": "2026-11-20",
+    "xp": 40
+   },
+   {
+    "date": "2026-11-21",
+    "xp": 40
+   },
+   {
+    "date": "2026-11-22",
+    "xp": 10
+   },
+   {
+    "date": "2026-11-23",
+    "xp": 20
+   },
+   {
+    "date": "2026-11-24",
+    "xp": 10
+   },
+   {
+    "date": "2026-11-25",
+    "xp": 70
+   },
+   {
+    "date": "2026-11-26",
+    "xp": 20
+   },
+   {
+    "date": "2026-11-27",
+    "xp": 10
+   },
+   {
+    "date": "2026-11-28",
+    "xp": 10
+   }
+  ]
+ },
+ "level": {
+  "level": 18,
+  "xp": 280,
+  "need": 390,
+  "pct": 71.8,
+  "total": 3850,
+  "stage": 5,
+  "stage_name": "나무",
+  "next_stage_level": 20
+ },
+ "warnings": []
+}
